@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".nav_menu.jobs.job_detail.job_equipment.EquipmentAttchmentList">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fileupload_rc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/recyclerview"
+        android:padding="5dp"
+        android:visibility="visible" />
+</LinearLayout>

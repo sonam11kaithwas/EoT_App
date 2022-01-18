@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f7fa">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F8F9"
+        tools:context="com.eot_app.nav_menu.jobs.job_detail.detail.DetailFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F8F9"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/dialogmap" />
+
+                <include layout="@layout/job_details_client_layout" />
+
+                <include layout="@layout/job_details_contact_layout" />
+
+                <include layout="@layout/job_details_schedule" />
+
+                <include layout="@layout/job_details_img_des_layout" />
+
+                <include layout="@layout/job_details_instr_lay" />
+
+                <include layout="@layout/job_details_completion_notes" />
+
+                <include layout="@layout/signature_pad" />
+
+
+                <include layout="@layout/job_custom_field_lay" />
+
+                <include layout="@layout/job_details_recur" />
+
+                <include layout="@layout/job_detail_tag_lay" />
+
+                <include layout="@layout/job_details_fw_lay" />
+
+                <include layout="@layout/quotes_num_layout" />
+
+
+                <!--add Completion mote field-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

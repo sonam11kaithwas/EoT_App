@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/file_upload_title"
+        style="@style/header_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Do you want to upload this file?"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/dialog_title"
+        style="@style/subtext_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_bg_yellow"
+        android:gravity="center|left"
+        android:hint="image"
+        android:inputType="text"
+        android:padding="5dp"
+        android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtStatusName"
+        style="@style/style_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/relMain"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtdatetime"
+        style="@style/style_thrid_thrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStatusName"
+        android:layout_toLeftOf="@id/relMain"
+        android:gravity="right"
+        android:textColor="@color/body_font_color"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtStatusHis"
+        style="@style/subtext_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdatetime"
+        android:layout_toLeftOf="@id/relMain"
+        android:textColor="@color/heading_green"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtStatusName1"
+        style="@style/style_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/relMain"
+        android:paddingStart="5dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtdatetime1"
+        style="@style/style_thrid_thrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStatusName1"
+        android:layout_toRightOf="@id/relMain"
+        android:textColor="@color/body_font_color"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtStatusHis1"
+        style="@style/subtext_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdatetime1"
+        android:layout_toRightOf="@id/relMain"
+        android:paddingStart="3dp"
+        android:textColor="@color/heading_green"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/imageViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/in_progress_icon" />
+
+        <View
+            android:id="@+id/textViewJobStatus"
+            style="@style/subtext_style"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageViewStatus"
+            android:layout_centerHorizontal="true"
+            android:background="@color/body_font_color" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

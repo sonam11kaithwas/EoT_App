@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/shape_chip_simple_drawable"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/memberName"
+        style="@style/header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/deleteMember"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/delete" />
+</LinearLayout>

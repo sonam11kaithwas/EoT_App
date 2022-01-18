@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/start_margin"
+            android:layout_height="@dimen/start_margin"
+            android:src="@drawable/watch_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_check_in_out"
+                style="@style/style_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_sec_text"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/check_in_time"
+                style="@style/style_forth_frth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_sec_text"
+                android:text="Check In" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sync_loader"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_font_color" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <!--Appoinment Menu-->
+            <LinearLayout
+                android:id="@+id/parent_appoinment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/svg_appointment" />
+
+                <TextView
+                    android:id="@+id/title_appoinment"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text"
+                    android:text="" />
+            </LinearLayout>
+
+            <!--Job menu-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/ic_job" />
+
+                <TextView
+                    android:id="@+id/title_jobs"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+            <!--Aduit Menu-->
+            <LinearLayout
+                android:id="@+id/audit_menu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/ic_audit" />
+
+                <TextView
+                    android:id="@+id/title_audit"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+
+            <!--Client Menu-->
+            <LinearLayout
+                android:id="@+id/parent_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/client_icon" />
+
+                <TextView
+                    android:id="@+id/title_client"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+
+            <!--Quotes menu-->
+            <LinearLayout
+                android:id="@+id/parent_quotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/ic_quote" />
+
+                <TextView
+                    android:id="@+id/title_qoutes"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+
+            <!--Scan Menu-->
+            <LinearLayout
+                android:id="@+id/parent_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/ic_qr_code" />
+
+                <TextView
+                    android:id="@+id/title_scan"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+
+            <!--one-to-one chat-->
+            <LinearLayout
+                android:id="@+id/chat_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/chat_tab_icon" />
+
+                <TextView
+                    android:id="@+id/chat_textview"
+                    style="@style/style_sec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text"
+                    android:layout_weight="1"
+                    android:text="Chat" />
+
+                <TextView
+                    android:id="@+id/badge_count"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/add_bdges_count"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="199"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <!--expence Menu-->
+            <LinearLayout
+                android:id="@+id/parent_expence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/ic_expense_icon" />
+
+                <TextView
+                    android:id="@+id/title_expence"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/parent_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/ic_report" />
+
+                <TextView
+                    android:id="@+id/title_report"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+            <!--Time sheet Menu-->
+            <LinearLayout
+                android:id="@+id/parent_timeSheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/time_sheet_ic" />
+
+                <TextView
+                    android:id="@+id/title_timeSheet"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+            <!--Add Leave Menu-->
+            <LinearLayout
+                android:id="@+id/parent_add_leave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/start_margin"
+                    android:layout_height="@dimen/start_margin"
+                    android:src="@drawable/leave_icon_3" />
+
+                <TextView
+                    android:id="@+id/title_addLeave"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/large_sec_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <!--</ScrollView>-->
+</LinearLayout>

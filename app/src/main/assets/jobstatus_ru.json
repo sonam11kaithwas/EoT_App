@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "Новый",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "Принято",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "Отклонить",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "Отмена",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "Путешествие",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "Перемена",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "В ходе выполнения",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "Перерыв в работе",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "Завершено",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "Закрыто",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "Мульти статус",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "En espera",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

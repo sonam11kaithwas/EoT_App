@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.eot_app.nav_menu.jobs.add_job.Add_job_activity">
+    <!--android:layout_marginTop="12dp"-->
+
+
+    <TextView
+        android:id="@+id/wlcm_header"
+        style="@style/header_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/almost_done"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/extra_text" />
+
+    <TextView
+        android:id="@+id/wlcm_header_txt"
+        style="@style/style_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wlcm_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/welcome_eot_txt"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save_btn"
+        android:layout_below="@+id/wlcm_header_txt"
+        android:layout_marginTop="10dp"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/country_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_country"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_drop_down_black"
+                    android:dropDownHeight="140dp"
+                    android:dropDownVerticalOffset="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/select_country"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            -
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/state_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_state"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_drop_down_black"
+                    android:dropDownHeight="140dp"
+                    android:hint="@string/select_state"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            -
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <EditText
+                    android:id="@+id/editText_city"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/city"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/currency_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_currency"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_drop_down_black"
+                    android:dropDownHeight="140dp"
+                    android:dropDownVerticalOffset="-10dp"
+                    android:hint="@string/select_currency"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/currencyformat_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_currency_format"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_drop_down_black"
+                    android:dropDownHeight="140dp"
+                    android:dropDownVerticalOffset="-15dp"
+                    android:hint="@string/select_currency_format"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            -
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/timezone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_tiem_zone"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_drop_down_black"
+                    android:dropDownHeight="140dp"
+                    android:dropDownVerticalOffset="-15dp"
+                    android:hint="@string/select_time_zone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            -
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/language_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editText_language"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_drop_down_black"
+                    android:dropDownHeight="140dp"
+                    android:dropDownVerticalOffset="-15dp"
+                    android:hint="@string/language"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_field_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/submit_btn"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </Button>
+</RelativeLayout>
+
+
+
+

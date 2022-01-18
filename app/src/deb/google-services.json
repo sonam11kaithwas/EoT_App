@@ -1,0 +1,47 @@
+{
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619590580003:android:c423f2b28bb6239d4c3e96",
+        "android_client_info": {
+          "package_name": "com.eot_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619590580003-mjpu0b9rmhqqv5mc9njm19p2dse5k8ur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD18yc5Ov8y8CqqGO9ixcS5m1twdfUrYc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619590580003-mjpu0b9rmhqqv5mc9njm19p2dse5k8ur.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "619590580003-5fnuqn6qh1uuvpd08toql1e8doo65pom.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aplite.eyeontask"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+  "project_info": {
+    "project_number": "619590580003",
+    "firebase_url": "https://eyeontask-7f763.firebaseio.com",
+    "project_id": "eyeontask-7f763",
+    "storage_bucket": "eyeontask-7f763.appspot.com"
+  }
+}

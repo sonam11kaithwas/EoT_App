@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chatcard"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/hint_padd"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="@dimen/hint_padd"
+        android:background="@drawable/outerborder_bg"
+        android:padding="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp">
+
+
+        <RelativeLayout
+            android:id="@+id/item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/widget30"
+                layout="@layout/test_crcl_layout" />
+
+
+            <TextView
+                android:id="@+id/item_title_name"
+                style="@style/style_thrid_thrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/widget30"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="Item"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userLastMsgTime"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="#00848d"
+                android:textSize="8sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/userLastMsg"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_title_name"
+                android:layout_alignEnd="@+id/userLastMsgTime"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="-25dp"
+                android:layout_toEndOf="@+id/widget30"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Start new chat here"
+                android:textSize="@dimen/medium_text_low" />
+
+            <TextView
+                android:id="@+id/badge_count"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_title_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="-20dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/add_bdges_count"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:paddingStart="3dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="3dp"
+                android:paddingBottom="5dp"
+                android:text="10+"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,580 @@
+{
+  "timezones": [
+    {
+      "Description": "-720",
+      "Timezone": "Dateline Standard Time-Current Time:14-05-2018 02:14 AM",
+      "text": "AoE(Anywhere on Earth)(UTC -12:00)",
+      "id": 96
+    },
+    {
+      "Description": "-660",
+      "Timezone": "UTC-11-Current Time:14-05-2018 03:14 AM",
+      "text": "NUT(Niue Time)(UTC -11:00)",
+      "id": 94
+    },
+    {
+      "Description": "-660",
+      "Timezone": "Samoa Standard Time-Current Time:14-05-2018 03:14 AM",
+      "text": "SST(Samoa Standard Time)(UTC -11:00)",
+      "id": 95
+    },
+    {
+      "Description": "-600",
+      "Timezone": "Hawaiian Standard Time-Current Time:14-05-2018 04:14 AM",
+      "text": "HAST(Hawaii-Aleutian Standard Time)(UTC -10:00)",
+      "id": 93
+    },
+    {
+      "Description": "-480",
+      "Timezone": "Alaskan Standard Time-Current Time:14-05-2018 06:14 AM",
+      "text": "AKST(Alaska Standard Time)(UTC -9:00)",
+      "id": 92
+    },
+    {
+      "Description": "-420",
+      "Timezone": "Pacific Standard Time (Mexico)-Current Time:14-05-2018 07:14 AM",
+      "text": "PST(Pacific Standard Time)(UTC -8:00)",
+      "id": 90
+    },
+    {
+      "Description": "-420",
+      "Timezone": "Pacific Standard Time-Current Time:14-05-2018 07:14 AM",
+      "text": "Pacific Standard Time",
+      "id": 91
+    },
+    {
+      "Description": "-420",
+      "Timezone": "US Mountain Standard Time-Current Time:14-05-2018 07:14 AM",
+      "text": "MST(Mountain Standard Time)(UTC -7:00)",
+      "id": 87
+    },
+    {
+      "Description": "-360",
+      "Timezone": "Mountain Standard Time (Mexico)-Current Time:14-05-2018 08:14 AM",
+      "text": "Mountain Standard Time (Mexico)",
+      "id": 88
+    },
+    {
+      "Description": "-360",
+      "Timezone": "Mountain Standard Time-Current Time:14-05-2018 08:14 AM",
+      "text": "Mountain Standard Time",
+      "id": 89
+    },
+    {
+      "Description": "-360",
+      "Timezone": "Central America Standard Time-Current Time:14-05-2018 08:14 AM",
+      "text": "CST(Central Standard Time)(UTC -6:00)",
+      "id": 83
+    },
+    {
+      "Description": "-300",
+      "Timezone": "Central Standard Time-Current Time:14-05-2018 09:14 AM",
+      "text": "Central Standard Time",
+      "id": 84
+    },
+    {
+      "Description": "-300",
+      "Timezone": "Central Standard Time (Mexico)-Current Time:14-05-2018 09:14 AM",
+      "text": "Central Standard Time (Mexico)",
+      "id": 85
+    },
+    {
+      "Description": "-360",
+      "Timezone": "Canada Central Standard Time-Current Time:14-05-2018 08:14 AM",
+      "text": "Canada Central Standard Time",
+      "id": 86
+    },
+    {
+      "Description": "-300",
+      "Timezone": "SA Pacific Standard Time-Current Time:14-05-2018 09:14 AM",
+      "text": "COT(Colombia Time)(UTC -5:00)",
+      "id": 80
+    },
+    {
+      "Description": "-240",
+      "Timezone": "Eastern Standard Time-Current Time:14-05-2018 10:14 AM",
+      "text": "EST(Eastern Standard Time)(UTC -5:00)",
+      "id": 81
+    },
+    {
+      "Description": "-300",
+      "Timezone": "US Eastern Standard Time-Current Time:14-05-2018 09:14 AM",
+      "text": "US Eastern Standard Time",
+      "id": 82
+    },
+    {
+      "Description": "-270",
+      "Timezone": "Venezuela Standard Time-Current Time:14-05-2018 09:44 AM",
+      "text": "VET(Venezuelan Standard Time)(UTC -4:30)",
+      "id": 79
+    },
+    {
+      "Description": "-240",
+      "Timezone": "Paraguay Standard Time-Current Time:14-05-2018 10:14 AM",
+      "text": "PYT(Paraguay Time)(UTC -4:00)",
+      "id": 74
+    },
+    {
+      "Description": "-180",
+      "Timezone": "Atlantic Standard Time-Current Time:14-05-2018 11:14 AM",
+      "text": "AST(Atlantic Standard Time)(UTC -4:00)",
+      "id": 75
+    },
+    {
+      "Description": "-240",
+      "Timezone": "Central Brazilian Standard Time-Current Time:14-05-2018 10:14 AM",
+      "text": "AMT(Amazon Time)(UTC -4:00)",
+      "id": 76
+    },
+    {
+      "Description": "-240",
+      "Timezone": "SA Western Standard Time-Current Time:14-05-2018 10:14 AM",
+      "text": "SA Western Standard Time",
+      "id": 77
+    },
+    {
+      "Description": "-240",
+      "Timezone": "Pacific SA Standard Time-Current Time:14-05-2018 10:14 AM",
+      "text": "Pacific SA Standard Time",
+      "id": 78
+    },
+    {
+      "Description": "-150",
+      "Timezone": "Newfoundland Standard Time-Current Time:14-05-2018 11:44 AM",
+      "text": "NST(Newfoundland Standard Time)(UTC -3:30)",
+      "id": 73
+    },
+    {
+      "Description": "-180",
+      "Timezone": "E. South America Standard Time-Current Time:14-05-2018 11:14 AM",
+      "text": "BRT(Brasília Time)(UTC -3:00)",
+      "id": 68
+    },
+    {
+      "Description": "-180",
+      "Timezone": "Argentina Standard Time-Current Time:14-05-2018 11:14 AM",
+      "text": "ART(Argentina Time)(UTC -3:00)",
+      "id": 69
+    },
+    {
+      "Description": "-180",
+      "Timezone": "SA Eastern Standard Time-Current Time:14-05-2018 11:14 AM",
+      "text": "ADT(Atlantic Daylight Time)(UTC -3:00)",
+      "id": 70
+    },
+    {
+      "Description": "-120",
+      "Timezone": "Greenland Standard Time-Current Time:14-05-2018 12:14 PM",
+      "text": "WGT(West Greenland Time)(UTC -3:00)",
+      "id": 71
+    },
+    {
+      "Description": "-180",
+      "Timezone": "Montevideo Standard Time-Current Time:14-05-2018 11:14 AM",
+      "text": "UYT(Uruguay Time)(UTC -3:00)",
+      "id": 72
+    },
+    {
+      "Description": "-120",
+      "Timezone": "UTC-02-Current Time:14-05-2018 12:14 PM",
+      "text": "BRST(Brasília Summer Time)(UTC -2:00)",
+      "id": 66
+    },
+    {
+      "Description": "-60",
+      "Timezone": "Mid-Atlantic Standard Time-Current Time:14-05-2018 01:14 PM",
+      "text": "GST(South Georgia Time)(UTC -2:00)",
+      "id": 67
+    },
+    {
+      "Description": "0",
+      "Timezone": "Azores Standard Time-Current Time:14-05-2018 02:14 PM",
+      "text": "AZOT(Azores Time)(UTC -1:00)",
+      "id": 64
+    },
+    {
+      "Description": "-60",
+      "Timezone": "Cape Verde Standard Time-Current Time:14-05-2018 01:14 PM",
+      "text": "CVT(Cape Verde Time)(UTC -1:00)",
+      "id": 65
+    },
+    {
+      "Description": "0",
+      "Timezone": "Morocco Standard Time-Current Time:14-05-2018 02:14 PM",
+      "text": "Morocco Standard Time",
+      "id": 1
+    },
+    {
+      "Description": "0",
+      "Timezone": "UTC-Current Time:14-05-2018 02:14 PM",
+      "text": "UTC(Coordinated Universal Time)(UTC)",
+      "id": 2
+    },
+    {
+      "Description": "60",
+      "Timezone": "GMT Standard Time-Current Time:14-05-2018 03:14 PM",
+      "text": "GMT(Greenwich Mean Time)(UTC +0:00)",
+      "id": 3
+    },
+    {
+      "Description": "0",
+      "Timezone": "Greenwich Standard Time-Current Time:14-05-2018 02:14 PM",
+      "text": "Greenwich Standard Time",
+      "id": 4
+    },
+    {
+      "Description": "120",
+      "Timezone": "W. Europe Standard Time-Current Time:14-05-2018 04:14 PM",
+      "text": "W. Europe Standard Time",
+      "id": 5
+    },
+    {
+      "Description": "120",
+      "Timezone": "Central Europe Standard Time-Current Time:14-05-2018 04:14 PM",
+      "text": "CET(Central European Time)(UTC +1:00)",
+      "id": 6
+    },
+    {
+      "Description": "120",
+      "Timezone": "Romance Standard Time-Current Time:14-05-2018 04:14 PM",
+      "text": "Romance Standard Time",
+      "id": 7
+    },
+    {
+      "Description": "120",
+      "Timezone": "Central European Standard Time-Current Time:14-05-2018 04:14 PM",
+      "text": "Central European Standard Time",
+      "id": 8
+    },
+    {
+      "Description": "60",
+      "Timezone": "W. Central Africa Standard Time-Current Time:14-05-2018 03:14 PM",
+      "text": "WAT(West Africa Time)(UTC +1:00)",
+      "id": 9
+    },
+    {
+      "Description": "180",
+      "Timezone": "Jordan Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "EET(Eastern European Time)(UTC +2:00)",
+      "id": 10
+    },
+    {
+      "Description": "180",
+      "Timezone": "GTB Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "GTB Standard Time",
+      "id": 11
+    },
+    {
+      "Description": "180",
+      "Timezone": "Middle East Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "Middle East Standard Time",
+      "id": 12
+    },
+    {
+      "Description": "180",
+      "Timezone": "Egypt Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "Egypt Standard Time",
+      "id": 13
+    },
+    {
+      "Description": "120",
+      "Timezone": "South Africa Standard Time-Current Time:14-05-2018 04:14 PM",
+      "text": "SAST(South Africa Standard Time)(UTC +2:00)",
+      "id": 14
+    },
+    {
+      "Description": "180",
+      "Timezone": "FLE Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "FLE Standard Time",
+      "id": 15
+    },
+    {
+      "Description": "180",
+      "Timezone": "Israel Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "IST(Israel Standard Time)(UTC +2:00)",
+      "id": 16
+    },
+    {
+      "Description": "180",
+      "Timezone": "E. Europe Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "E. Europe Standard Time",
+      "id": 17
+    },
+    {
+      "Description": "60",
+      "Timezone": "Namibia Standard Time-Current Time:14-05-2018 03:14 PM",
+      "text": "WAST(West Africa Summer Time)(UTC +2:00)",
+      "id": 18
+    },
+    {
+      "Description": "180",
+      "Timezone": "Arabic Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "AST(Arabia Standard Time)(UTC +3:00)",
+      "id": 19
+    },
+    {
+      "Description": "180",
+      "Timezone": "Arab Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "Arab Standard Time",
+      "id": 20
+    },
+    {
+      "Description": "240",
+      "Timezone": "Russian Standard Time-Current Time:14-05-2018 06:14 PM",
+      "text": "MSK(Moscow Standard Time)(UTC +3:00)",
+      "id": 21
+    },
+    {
+      "Description": "180",
+      "Timezone": "E. Africa Standard Time-Current Time:14-05-2018 05:14 PM",
+      "text": "EAT(Eastern Africa Time)(UTC +3:00)",
+      "id": 22
+    },
+    {
+      "Description": "270",
+      "Timezone": "Iran Standard Time-Current Time:14-05-2018 06:44 PM",
+      "text": "IRST(Iran Standard Time)(UTC +3:30)",
+      "id": 23
+    },
+    {
+      "Description": "240",
+      "Timezone": "Arabian Standard Time-Current Time:14-05-2018 06:14 PM",
+      "text": "GST(Gulf Standard Time)(UTC +4:00)",
+      "id": 24
+    },
+    {
+      "Description": "300",
+      "Timezone": "Azerbaijan Standard Time-Current Time:14-05-2018 07:14 PM",
+      "text": "AZT(Azerbaijan Time)(UTC +4:00)",
+      "id": 25
+    },
+    {
+      "Description": "240",
+      "Timezone": "Mauritius Standard Time-Current Time:14-05-2018 06:14 PM",
+      "text": "MUT(Mauritius Time)(UTC +4:00)",
+      "id": 26
+    },
+    {
+      "Description": "240",
+      "Timezone": "Georgian Standard Time-Current Time:14-05-2018 06:14 PM",
+      "text": "GET(Georgia Standard Time)(UTC +4:00)",
+      "id": 27
+    },
+    {
+      "Description": "300",
+      "Timezone": "Caucasus Standard Time-Current Time:14-05-2018 07:14 PM",
+      "text": "AMT(Armenia Time)(UTC +4:00)",
+      "id": 28
+    },
+    {
+      "Description": "270",
+      "Timezone": "Afghanistan Standard Time-Current Time:14-05-2018 06:44 PM",
+      "text": "AFT(Afghanistan Time)(UTC +4:30)",
+      "id": 29
+    },
+    {
+      "Description": "360",
+      "Timezone": "Ekaterinburg Standard Time-Current Time:14-05-2018 08:14 PM",
+      "text": "YEKT(Yekaterinburg Time)(UTC +5:00)",
+      "id": 30
+    },
+    {
+      "Description": "300",
+      "Timezone": "Pakistan Standard Time-Current Time:14-05-2018 07:14 PM",
+      "text": "PKT(Pakistan Standard Time)(UTC +5:00)",
+      "id": 31
+    },
+    {
+      "Description": "300",
+      "Timezone": "West Asia Standard Time-Current Time:14-05-2018 07:14 PM",
+      "text": "UZT(Uzbekistan Time)(UTC +5:00)",
+      "id": 32
+    },
+    {
+      "Description": "330",
+      "Timezone": "India Standard Time-Current Time:14-05-2018 07:44 PM",
+      "text": "IST(India Standard Time)(UTC +5:30)",
+      "id": 33
+    },
+    {
+      "Description": "330",
+      "Timezone": "Sri Lanka Standard Time-Current Time:14-05-2018 07:44 PM",
+      "text": "Sri Lanka Standard Time",
+      "id": 34
+    },
+    {
+      "Description": "345",
+      "Timezone": "Nepal Standard Time-Current Time:14-05-2018 07:59 PM",
+      "text": "NPT(Nepal Time)(UTC +5:45)",
+      "id": 35
+    },
+    {
+      "Description": "360",
+      "Timezone": "Central Asia Standard Time-Current Time:14-05-2018 08:14 PM",
+      "text": "BTT(Bhutan Time)(UTC +6:00)",
+      "id": 36
+    },
+    {
+      "Description": "420",
+      "Timezone": "Bangladesh Standard Time-Current Time:14-05-2018 09:14 PM",
+      "text": "BST(Bangladesh Standard Time)(UTC +6:00)",
+      "id": 37
+    },
+    {
+      "Description": "420",
+      "Timezone": "N. Central Asia Standard Time-Current Time:14-05-2018 09:14 PM",
+      "text": "NOVT(Novosibirsk Time)(UTC +6:00)",
+      "id": 38
+    },
+    {
+      "Description": "390",
+      "Timezone": "Myanmar Standard Time-Current Time:14-05-2018 08:44 PM",
+      "text": "MMT(Myanmar Time)(UTC +6:30)",
+      "id": 39
+    },
+    {
+      "Description": "420",
+      "Timezone": "SE Asia Standard Time-Current Time:14-05-2018 09:14 PM",
+      "text": "ICT(Indochina Time)(UTC +7:00)",
+      "id": 40
+    },
+    {
+      "Description": "480",
+      "Timezone": "North Asia Standard Time-Current Time:14-05-2018 10:14 PM",
+      "text": "KRAT(Krasnoyarsk Time)(UTC +7:00)",
+      "id": 41
+    },
+    {
+      "Description": "480",
+      "Timezone": "China Standard Time-Current Time:14-05-2018 10:14 PM",
+      "text": "CST(China Standard Time)(UTC +8:00)",
+      "id": 42
+    },
+    {
+      "Description": "540",
+      "Timezone": "North Asia East Standard Time-Current Time:14-05-2018 11:14 PM",
+      "text": "IRKT(Irkutsk Time)(UTC +8:00)",
+      "id": 43
+    },
+    {
+      "Description": "480",
+      "Timezone": "Singapore Standard Time-Current Time:14-05-2018 10:14 PM",
+      "text": "SGT(Singapore Time)(UTC +8:00)",
+      "id": 44
+    },
+    {
+      "Description": "480",
+      "Timezone": "W. Australia Standard Time-Current Time:14-05-2018 10:14 PM",
+      "text": "AWST(Australian Western Standard Time)(UTC +8:00)",
+      "id": 45
+    },
+    {
+      "Description": "480",
+      "Timezone": "Taipei Standard Time-Current Time:14-05-2018 10:14 PM",
+      "text": "Taipei Standard Time",
+      "id": 46
+    },
+    {
+      "Description": "480",
+      "Timezone": "Ulaanbaatar Standard Time-Current Time:14-05-2018 10:14 PM",
+      "text": "ULAT(Ulaanbaatar Time)(UTC +8:00)",
+      "id": 47
+    },
+    {
+      "Description": "540",
+      "Timezone": "Tokyo Standard Time-Current Time:14-05-2018 11:14 PM",
+      "text": "JST(Japan Standard Time)(UTC +9:00)",
+      "id": 48
+    },
+    {
+      "Description": "540",
+      "Timezone": "Korea Standard Time-Current Time:14-05-2018 11:14 PM",
+      "text": "KST(Korea Standard Time)(UTC +9:00)",
+      "id": 49
+    },
+    {
+      "Description": "600",
+      "Timezone": "Yakutsk Standard Time-Current Time:15-05-2018 12:14 AM",
+      "text": "YAKT(Yakutsk Time)(UTC +9:00)",
+      "id": 50
+    },
+    {
+      "Description": "570",
+      "Timezone": "Cen. Australia Standard Time-Current Time:14-05-2018 11:44 PM",
+      "text": "ACST(Australian Central Standard Time)(UTC +9:30)",
+      "id": 51
+    },
+    {
+      "Description": "570",
+      "Timezone": "AUS Central Standard Time-Current Time:14-05-2018 11:44 PM",
+      "text": "AUS Central Standard Time",
+      "id": 52
+    },
+    {
+      "Description": "600",
+      "Timezone": "E. Australia Standard Time-Current Time:15-05-2018 12:14 AM",
+      "text": "AEST(Australian Eastern Standard Time)(UTC +10:00)",
+      "id": 53
+    },
+    {
+      "Description": "600",
+      "Timezone": "AUS Eastern Standard Time-Current Time:15-05-2018 12:14 AM",
+      "text": "AUS Eastern Standard Time",
+      "id": 54
+    },
+    {
+      "Description": "600",
+      "Timezone": "West Pacific Standard Time-Current Time:15-05-2018 12:14 AM",
+      "text": "YAPT(Yap Time)(UTC +10:00)",
+      "id": 55
+    },
+    {
+      "Description": "600",
+      "Timezone": "Tasmania Standard Time-Current Time:15-05-2018 12:14 AM",
+      "text": "Tasmania Standard Time",
+      "id": 56
+    },
+    {
+      "Description": "660",
+      "Timezone": "Vladivostok Standard Time-Current Time:15-05-2018 01:14 AM",
+      "text": "VLAT(Vladivostok Time)(UTC +10:00)",
+      "id": 57
+    },
+    {
+      "Description": "660",
+      "Timezone": "Central Pacific Standard Time-Current Time:15-05-2018 01:14 AM",
+      "text": "SBT(Solomon Islands Time)(UTC +11:00)",
+      "id": 58
+    },
+    {
+      "Description": "720",
+      "Timezone": "New Zealand Standard Time-Current Time:15-05-2018 02:14 AM",
+      "text": "NZST(New Zealand Standard Time)(UTC +12:00)",
+      "id": 59
+    },
+    {
+      "Description": "720",
+      "Timezone": "UTC+12-Current Time:15-05-2018 02:14 AM",
+      "text": "WAKT(Wake Time)(UTC +12:00)",
+      "id": 60
+    },
+    {
+      "Description": "720",
+      "Timezone": "Fiji Standard Time-Current Time:15-05-2018 02:14 AM",
+      "text": "FJT(Fiji Time)(UTC +12:00)",
+      "id": 61
+    },
+    {
+      "Description": "780",
+      "Timezone": "Kamchatka Standard Time-Current Time:15-05-2018 03:14 AM",
+      "text": "PETT(Kamchatka Time)(UTC +12:00)",
+      "id": 62
+    },
+    {
+      "Description": "780",
+      "Timezone": "Tonga Standard Time-Current Time:15-05-2018 03:14 AM",
+      "text": "TOT(Tonga Time)(UTC +13:00)",
+      "id": 63
+    }
+  ]
+}

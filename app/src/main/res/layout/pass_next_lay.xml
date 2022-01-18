@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pass_lay"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.3"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <TextView
+        android:id="@+id/email_id_show"
+        style="@style/style_thrid_thrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/lgn_usr_nm_brdr"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:text="@string/Username"
+        android:textColor="@color/black"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_pass"
+            style="@style/style_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_margin"
+            android:layout_marginEnd="@dimen/end_margin"
+            android:hint="@string/pass_word"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/left_margin"
+        android:layout_marginEnd="@dimen/end_margin">
+
+        <CheckBox
+            android:id="@+id/rememberme"
+            style="@style/style_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="5dp"
+            android:text="@string/rember"
+            android:textColor="#000"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_field_height"
+        android:layout_marginStart="@dimen/start_margin"
+        android:layout_marginTop="@dimen/hint_padd"
+        android:layout_marginEnd="@dimen/end_margin"
+        android:background="@color/colorPrimary"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/forgot_pw"
+        style="@style/style_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="@dimen/left_margin"
+        android:text="@string/forgetpassword"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/use_anot_account"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/start_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/end_margin"
+        android:background="@drawable/edt_cntct_brdr"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/use_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="normal" />
+</LinearLayout>

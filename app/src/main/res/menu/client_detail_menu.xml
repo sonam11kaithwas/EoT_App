@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/clt_grp_ovrvw">
+        <item
+            android:id="@+id/clt_edit"
+            android:icon="@drawable/ic_edit"
+            android:title="edit"
+            app:showAsAction="ifRoom" />
+    </group>
+    <group
+        android:id="@+id/clt_grp_contact"
+        android:visible="false">
+        <item
+            android:id="@+id/clt_add_contact"
+            android:icon="@drawable/ic_add_white_24dp"
+            android:title="add contact"
+            app:showAsAction="ifRoom" />
+    </group>
+    <group
+        android:id="@+id/clt_grp_site"
+        android:visible="false">
+        <item
+            android:id="@+id/clt_add_site"
+            android:icon="@drawable/ic_add_white_24dp"
+            android:title="add site"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>

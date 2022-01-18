@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">EyeOnTask</string>
+    <string name="login_headr">EyeOnTask</string>
+    <string name="app_fw_hdr">Field Service App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //privacy police
+    <string name="privacy_policy">Copyright &#169; Eyeontask 2021 <a href="https://www.eyeontask.com/policy.html"> Privacy Policy</a></string>
+
+    //login
+    <string name="login_email">User Name</string>
+    <string name="pass_word">Password</string>
+    <string name="rember">Remember me</string>
+    <string name="login">Login</string>
+    <string name="next">Next</string>
+    <string name="use_account">Use another account</string>
+    <string name="Passwordresetkey">Password reset key</string>
+
+    //forget password
+    <string name="forgetpassword">Forgot Password ?</string>
+    <string name="already_key">Already have key</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="dontkey">Don\'t have key</string>
+    <string name="pass_recov">Password Recovery</string>
+    <string name="pass_head_desc">Please provide us your username and we will send you a link on your associated email address where you can choose a new password.</string>
+
+
+    <string name="Username">Username</string>
+
+
+    <string name="date_form">DD-MM-YY</string>
+    <string name="city">City</string>
+    <string name="postal">Postal Code</string>
+
+
+    //titles
+    <string name="title_activity_client_detail">Overview</string>
+    <string name="title_activity_addclient">Add Client</string>
+    <string name="title_editoverview">Edit Client</string>
+    <string name="title_edit_contact">Edit Contact</string>
+    <string name="external_dir">GetSignature</string>
+
+
+    <integer name="mobile_no_length">15</integer>
+    <integer name="social_acc_length">25</integer>
+
+
+    //mandotry fileds
+    <string name="mob_no">Mobile Number *</string>
+    <string name="job_email">Email ID *</string>
+    <string name="add">Address *</string>
+    <string name="ctry_code">Country code </string>
+
+
+    //drawer main menu item
+    <string name="submit">Submit</string>
+
+
+    //list item empty messages
+
+
+    <string name="save_for_futur">Save for future use</string>
+
+
+    //task status
+    <string name="onhold">On Hold</string>
+    <string name="complete">Completed</string>
+
+
+    //job buttom navigation tab
+
+    //client buttom navigation tab
+    <string name="tlt_clt_ov">Overview</string>
+    <string name="tlt_clt_contact">Contacts</string>
+    <string name="tlt_clt_site">Projects/Sites</string>
+
+    //job details
+
+
+    //feedback
+    <!--<string name="feed_head">Send us your feedback</string>-->
+    <!--<string name="feed_sub_head">How would you evaluate the quality of work performed?</string>-->
+    <!--<string name="sign">Signature</string>-->
+
+    //Filter task
+
+    <string name="forgot_password_title">Forgot Password</string>
+
+
+    //documents
+
+    //custom form
+
+    //invoice
+    <string name="invoice_add_new_item">Add New Item</string>
+    <string name="pay_full_amount">Pay Full Amount</string>
+    <string name="pay_partial_amount">Pay Partial Amount</string>
+    <string name="pay_now">Pay Now</string>
+
+    <!--<string name="empty_invoice">Could not find invoice for this job</string>-->
+
+    <string name="list_item">Add Item</string>
+
+    <string name="friday">F</string>
+    <string name="monday">M</string>
+    <string name="saturday">S</string>
+    <string name="sunday">S</string>
+    <string name="thursday">T</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+
+    <string name="crate_account">Create Your Account !</string>
+    <string name="crate_account_txt">Your email will become your login for EyeOnTask</string>
+    <string name="crate_account_com_name">Company name or your name</string>
+    <string name="crate_account_email">Business Email</string>
+    <string name="crate_account_pass">Password</string>
+    <string name="crate_account_server">Chooese your Server Location</string>
+
+    <string name="welcome_eot">Welcome to EyeOnTask.com</string>
+    <string name="welcome_eot_txt">Complete your account details</string>
+    <string name="welcome_verify_code">Enter Verification Code</string>
+
+    <string name="almost_done">Almost Done!</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_state">Select State</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="select_currency_format">Select Currency Format</string>
+    <string name="select_time_zone">Select Time Zone</string>
+    <string name="language">Language</string>
+    <string name="registerr">Click Here To Register</string>
+
+
+    //Dialog
+
+    <string name="ok">OK</string>
+    <string name="dialog_alert">Alert !</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    //sysnc msgs
+
+    //forgot password
+
+
+    //Base Url
+
+
+    //custom form
+    <!--<string name="ans_hint">Add Your Answer</string>-->
+
+    //Invoice
+    <!--<string name="invoice_Name">John Doe</string>-->
+
+    //invoice item
+
+
+    // location dialog checker
+
+
+    //job task dropdown
+    <!--<string name="new_task">New</string>-->
+    <!--<string name="accept_task">Accepted</string>-->
+
+
+    //task prioty
+
+    //invoice dropdown
+
+    //camera permissions
+
+    //galary permissions
+
+
+    <!--titles-->
+
+    <!--detail menu item meta data-->
+
+    //add job
+
+</resources>

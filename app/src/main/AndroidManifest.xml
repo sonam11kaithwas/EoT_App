@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eot_app">
+    <!-- nineponmon -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+Required only when requesting background location access on
+        Android 10 (API level 29) and higher.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".utility.EotApp"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_logo2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".nav_menu.jobs.job_detail.job_audit_remark_attchment_pkg.SelectedImageActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".nav_menu.equipment.link_own_client_equ_barc.JobEquipmentScanActivity" />
+        <activity android:name=".nav_menu.jobs.job_detail.job_equipment.EquipmentAttchmentList" />
+        <activity
+            android:name=".nav_menu.equipment.linkequip.ActivityLinkEquipment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.client.clientlist.client_detail.work_history.view.AppointmentHistoryDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.equipment.View.JobdetailsEquActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.equipment.View.AuditDetailEquActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.audit.nav_scan.UploadBarcodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.audit.addAudit.AddAuditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".registration_form.Varify_Account_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".registration_form.Create_Account_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".registration_form.Almost_done_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.addleave.AddLeaveFragment"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.add_job.add_job_recr.AddJobRecrHomeActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.job_equipment.add_job_equip.AddJobEquipMentActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- <activity android:name=".nav_menu.item.Item_activity"/> -->
+        <activity android:name=".nav_menu.jobs.job_detail.job_equipment.job_equ_remrk.JobEquRemarkRemarkActivity" />
+        <activity android:name=".nav_menu.jobs.job_detail.job_equipment.JobEquipmentActivity" />
+        <activity android:name=".nav_menu.custom_fileds.CustomFiledListActivity" />
+        <activity
+            android:name=".nav_menu.setting.Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.audit.nav_scan.EquipmentDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.addinvoiveitem2pkg.AddEditInvoiceItemActivity2"
+            android:parentActivityName=".nav_menu.jobs.job_detail.invoice2list.JoBInvoiceItemList2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.invoice2list.JoBInvoiceItemList2Activity"
+            android:parentActivityName=".nav_menu.jobs.job_detail.JobDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.appointment.addupdate.AddAppointmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.appointment.details.AppointmentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.expense.expense_detail.ExpenseDetailsActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.expense.add_expense.AddExpenseActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- https://stackoverflow.com/questions/50174010/marshmallow-api-level-23-firebase-messaging-is-not-working -->
+        <activity
+            android:name=".nav_menu.admin_fw_chat_pkg.chat_pkg.ChatActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.job_complation.JobCompletionActivity"
+            android:parentActivityName=".nav_menu.jobs.job_detail.JobDetailActivity" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.reschedule.RescheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.revisit.RevisitActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.DetectedActivitiesIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".nav_menu.admin_fw_chat_pkg.sonam_user_user_chat_pkg.UserToUserChatActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.quote.filter_quotes_pkg.QuotesFilter_Activity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.audit.audit_list.AuditDetails"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.audit.audit_list.documents.ActivityEditImageDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.audit.nav_scan.BarcodeScanActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.audit.audit_list.equipment.remark.RemarkActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.documents.ActivityDocumentSaveUpload"
+            android:parentActivityName=".nav_menu.jobs.job_detail.JobDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".nav_menu.appointment.details.documents.ActivityDocumentUpload"
+            android:parentActivityName=".nav_menu.appointment.details.AppointmentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".nav_menu.quote.quotes_add_item_pkg.AddQutesItem_Activity"
+            android:parentActivityName=".nav_menu.quote.quote_invoice_pkg.Quote_Invoice_Details_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.quote.add_quotes_pkg.AddQuotes_Activity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.generate_invoice.Generate_Invoice_Activity"
+            android:fitsSystemWindows="true"
+            android:parentActivityName=".nav_menu.jobs.job_detail.JobDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.quote.quote_invoice_pkg.Quote_Invoice_Details_Activity"
+            android:fitsSystemWindows="true"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.invoice.invoice_print_pkg.Invoice_Print_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.invoice.invoice_email_pkg.Invoice_Email_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.invoice.invoice_payment_pkg.Payment_Activity"
+            android:parentActivityName=".nav_menu.jobs.job_detail.JobDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.eot_app.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_file_path" />
+        </provider>
+
+        <activity
+            android:name=".home_screens.SplashActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login_next.Login2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".home_screens.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nav_menu.jobs.add_job.Add_job_activity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.JobDetailActivity"
+            android:hardwareAccelerated="false"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.client.clientlist.client_detail.ClientDetail"
+            android:label="@string/title_activity_client_detail"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".nav_menu.client.add_client.AddClient"
+            android:label="@string/title_activity_addclient"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.client.clientlist.client_detail.edit_overview.OverViewEditActivity"
+            android:label="@string/title_editoverview"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.client.clientlist.client_detail.site.sitelist.editsite.EditSiteActivity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".nav_menu.client.clientlist.client_detail.contact.edit_contact.editmodel.Edit_Add_Contact_Activity"
+            android:label="@string/title_edit_contact"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".utility.settings.firstSync.FirstSyncActivity" />
+        <activity
+            android:name=".nav_menu.jobs.job_detail.form_form.get_qus_list.FormQueAns_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- android:enabled="true" -->
+        <service
+            android:name=".services.MyAndroidFirebaseMsgService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.ForegroundService2"
+            android:foregroundServiceType="location" />
+
+        <receiver
+            android:name=".utility.JobReciver"
+            android:exported="true" /> <!-- android:enabled="true" -->
+        <activity
+            android:name=".nav_menu.jobs.job_filter.JobFilter_Activity"
+            android:parentActivityName=".home_screens.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <service android:name=".services.GetKillEvent_ToDestryNotication" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA1-FdAtrxX8PliyVpENF0iNDaFAb9vlu8" />
+
+
+    </application>
+
+</manifest>

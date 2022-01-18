@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.eot_app.nav_menu.report.ReportViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/recyclerview">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/download_report_header"
+                        style="@style/style_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Download Report"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time_report_sub_header"
+                        style="@style/style_thrid_thrd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="You can select date rate and download Your Time Sheet." />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/linear_fromdate_lay"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_sheet_bck"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <RelativeLayout
+                                android:id="@+id/from_report_lay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/from_lable"
+                                    style="@style/text_hint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:visibility="gone" />
+
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/from_img"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/from_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center|start"
+                                    android:src="@drawable/date_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/time_from"
+                                    style="@style/style_thrid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/from_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_toEndOf="@+id/from_img"
+                                    android:gravity="center|start"
+                                    android:text="" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_timereport_to"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_sheet_bck"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/to_lable"
+                                    style="@style/text_hint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:visibility="gone" />
+
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/to_img"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/to_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center|start"
+                                    android:src="@drawable/date_icon" />
+
+                                <TextView
+                                    android:id="@+id/time_to"
+                                    style="@style/style_thrid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/to_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_toEndOf="@+id/to_img"
+                                    android:gravity="center|start"
+                                    android:text="" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/download_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/date"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/submit_btn"
+                    android:gravity="center_horizontal|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/style_sec"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/downloadpng" />
+
+                    <TextView
+                        android:id="@+id/submit_btn"
+                        style="@style/style_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Download Time Sheet"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

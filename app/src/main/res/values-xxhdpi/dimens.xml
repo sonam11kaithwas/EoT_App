@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_width">90dp</dimen>
+    <dimen name="logo_height">90dp</dimen>
+    <dimen name="extra_text">30dp</dimen>
+    <dimen name="text_layout_height">42dp</dimen>
+    <dimen name="medium_text">15dp</dimen>
+    <dimen name="margin_top">12dp</dimen>
+
+
+    <!--chat layout send_layout-->
+    <dimen name="send_msg_layout">80dp</dimen>
+    <dimen name="chat_usrNM">10dp</dimen>
+    <dimen name="chat_msgs">12dp</dimen>
+    <dimen name="chat_time">8dp</dimen>
+    <dimen name="lay_pad">10dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size">13sp</dimen>
+</resources>

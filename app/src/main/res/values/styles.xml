@@ -1,0 +1,269 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/colabmed</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <!--<item name="android:windowDisablePreview">true</item>-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--login screen -->
+
+
+    <!--full screen theme-->
+    <style name="AppTheme2" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="style_sub_header" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/sub_header_textsize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/body_font_color</item>
+    </style>
+
+
+    //stryle for progressbar load in center
+
+    <style name="progressbarstyle" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sub_header_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/arimo_regular</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+    //TextInputLayout hint style
+
+    <style name="TextInputLayoutHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/medium_text_low</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/txt_sub_color</item>
+    </style>
+
+    //text view hint style 02-nov-18
+
+    <style name="text_hint" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/medium_text_low</item>
+        <item name="android:textColor">@color/txt_sub_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/arimo_regular</item>
+    </style>
+
+
+    //For List item
+
+    <style name="header_text_style" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_bold</item>
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:color">@color/body_font_color</item>
+    </style>
+
+    //edit text style
+
+    <style name="subtext_style" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/medium_text_low</item>
+        <item name="android:textColor">@color/txt_sub_color</item>
+    </style>
+
+
+    //use for button and sub text
+
+    <style name="style_sec" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/large_sec_text</item>
+        <item name="android:color">@color/txt_color</item>
+    </style>
+
+
+    <style name="style_sec_sec" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/large_sec_text</item>
+        <item name="android:color">@color/txt_sub_color</item>
+        <item name="android:inputType">none</item>
+    </style>
+
+    //13,bold
+
+    <style name="style_thrid" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/medium_txt</item>
+        <item name="android:color">@color/txt_color</item>
+    </style>
+
+    <style name="style_thrid_thrd" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/medium_txt</item>
+        <item name="android:color">@color/txt_sub_color</item>
+    </style>
+
+    <style name="style_forth_frth" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/medium_txt_low</item>
+        <item name="android:color">@color/txt_sub_color</item>
+    </style>
+
+    <style name="style_fifth_fth" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/low_text</item>
+        <item name="android:color">@color/txt_sub_color</item>
+    </style>
+
+
+    <style name="menu_style" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/large_sec_text</item>
+        <item name="android:color">@color/txt_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    //dialog style
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/txt_color</item>
+        <item name="android:background">@color/recyclerview</item>
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textViewStyle">@font/arimo_regular</item>
+
+    </style>
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Job completion fork view-->
+    <style name="jobComStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+    <!--style for Add recur radio-->
+    <style name="add_recr_radio_style" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/large_sec_text</item>
+        <item name="android:color">@color/txt_sub_color</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="background">@android:color/transparent</item>
+
+    </style>
+
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+    </style>
+
+
+    <!--Radio button style-->
+    <style name="radio_button_style" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/medium_txt</item>
+        <item name="android:color">@color/txt_color</item>
+        <item name="textAppearanceButton">@style/style_thrid</item>
+
+    </style>
+
+    <style name="edit_postal_code" parent="style_sec_sec">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPostalAddress</item>
+        <item name="android:maxLength">16</item>
+    </style>
+
+
+    <!--Job details Hearder Style-->
+    <style name="job_details_headr_style" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/large_sec_text</item>
+        <item name="android:color">@color/txt_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">@color/recyclerview</item>
+    </style>
+    <!--Job details Hearder Style-->
+    <style name="job_details_child_style" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/arimo_regular</item>
+        <item name="android:textSize">@dimen/medium_txt</item>
+        <item name="android:color">@color/txt_sub_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+</resources>
+
+
+

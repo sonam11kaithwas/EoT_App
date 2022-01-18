@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/email_lay"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.3"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_email"
+        android:padding="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_email"
+            style="@style/style_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start_margin"
+            android:layout_marginEnd="@dimen/end_margin"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_field_height"
+        android:layout_marginStart="@dimen/start_margin"
+        android:layout_marginTop="@dimen/left_margin"
+        android:layout_marginEnd="@dimen/end_margin"
+        android:background="@color/colorPrimary"
+        android:singleLine="true"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/registeration_btn"
+        style="@style/style_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:padding="@dimen/left_margin"
+        android:text="@string/registerr"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="normal" />
+</LinearLayout>

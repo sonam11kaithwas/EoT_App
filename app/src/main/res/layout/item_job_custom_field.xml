@@ -1,0 +1,249 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <!--question Layout-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left|top"
+        android:orientation="horizontal">
+
+        <!--add question no.-->
+
+        <TextView
+            android:id="@+id/que_no"
+            style="@style/style_sec_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone" />
+
+        <!--add ques-->
+        <TextView
+            android:id="@+id/tvQuestion"
+            style="@style/style_sec_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="left|top"
+            android:text="Dynamic Question add"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+        <!--         android:textColor="#60000000"-->
+
+        <CheckBox
+            android:id="@+id/checkbox_single"
+            style="@style/style_sec_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:buttonTint="@color/txt_color"
+            android:textColor="#60000000" />
+
+
+    </LinearLayout>
+
+    <!--ans ques type 1 text-->
+
+    <EditText
+        android:id="@+id/type_text"
+        style="@style/style_sec_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/arimo_regular"
+        android:gravity="center_vertical"
+        android:maxHeight="@dimen/send_msg_layout"
+        android:overScrollMode="always"
+        android:paddingLeft="3dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"
+        android:textStyle="normal" />
+
+
+    <!--       style="@style/style_sec_sec"-->
+    <!--ans ques type 2 text area-->
+
+
+    <EditText
+        android:id="@+id/type_text_area"
+        style="@style/style_sec_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/arimo_regular"
+        android:gravity="top|left"
+        android:maxHeight="@dimen/send_msg_layout"
+        android:maxLines="3"
+        android:minLines="3"
+        android:paddingLeft="3dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+    <!--que type 3 for checkbox-->
+
+    <LinearLayout
+        android:id="@+id/linearCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/linearSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/dropdown_optn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/spinner_text"
+                style="@style/style_sec_sec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/arimo_regular"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_drop_down_black" />
+
+        </LinearLayout>
+
+        <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+            android:id="@+id/dropdown_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/dropdown_optn"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <!--date ans que type 5-->
+
+    <LinearLayout
+        android:id="@+id/linearDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/style_sec_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/date_icon"
+            android:fontFamily="@font/arimo_regular"
+            android:gravity="center|start"
+            android:hint="DD-MM-YY"
+            android:padding="5dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <!--Time ans que type 6-->
+
+    <LinearLayout
+        android:id="@+id/linearTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/style_sec_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/watch_icon"
+            android:fontFamily="@font/arimo_regular"
+            android:gravity="center|start"
+            android:hint="HH-MM-AM"
+            android:padding="5dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <!--Date Time Question Type 7 -->
+
+    <LinearLayout
+        android:id="@+id/linearDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvTimeDate"
+            style="@style/style_sec_sec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arimo_regular"
+            android:gravity="center|start"
+            android:hint="Choose date time"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/timeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/watch_icon" />
+
+        <ImageView
+            android:id="@+id/dateImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/date_icon" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_font_color" />
+
+</LinearLayout>
+

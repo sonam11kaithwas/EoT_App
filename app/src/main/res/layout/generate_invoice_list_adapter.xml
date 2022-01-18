@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_invoice_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="0dp">
+    <!--app:cardBackgroundColor="@color/white"-->
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" />
+        <!--android:buttonTint="@color/txt_color"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/checkbox_invoice"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/item_nm_invoice"
+                style="@style/style_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/item_price_invoice"
+                android:gravity="left"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/qty_invoice"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_nm_invoice"
+                android:layout_marginRight="2dp"
+                android:gravity="left"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/item_price_invoice"
+                style="@style/style_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="total"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

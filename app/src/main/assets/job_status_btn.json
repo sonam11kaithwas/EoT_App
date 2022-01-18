@@ -1,0 +1,88 @@
+{
+  "1": [
+    {
+      "status_no": "2",
+      "status_name": "accepted",
+      "img": "ic_accepted_task"
+    },
+    {
+      "status_no": "3",
+      "status_name": "reject",
+      "img": "ic_rejected"
+    }
+  ],
+  "2": [
+    {
+      "status_no": "5",
+      "status_name": "travelling",
+      "img": "ic_travelling_small_icon"
+    }
+  ],
+  "3": [
+    {
+      "status_no": "2",
+      "status_name": "accepted",
+      "img": "ic_accepted_task"
+    }
+  ],
+  "5": [
+    {
+      "status_no": "6",
+      "status_name": "break",
+      "img": "ic_break"
+    },
+    {
+      "status_no": "7",
+      "status_name": "In_progress",
+      "img": "in_progress"
+    }
+  ],
+  "6": [
+    {
+      "status_no": "5",
+      "status_name": "travelling",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "status_no": "7",
+      "status_name": "In_progress",
+      "img": "in_progress"
+    }
+  ],
+  "7": [
+    {
+      "status_no": "12",
+      "status_name": "new_on_hold",
+      "img": "ic_pendng_task"
+    },
+    {
+      "status_no": "9",
+      "status_name": "completed",
+      "img": "ic_complete_task"
+    }
+  ],
+  "8": [
+    {
+      "status_no": "7",
+      "status_name": "In_progress",
+      "img": "in_progress"
+    },
+    {
+      "status_no": "9",
+      "status_name": "completed",
+      "img": "ic_complete_task"
+    }
+  ],
+  "12": [
+    {
+      "status_no": "7",
+      "status_name": "In_progress",
+      "img": "in_progress"
+    },
+    {
+      "status_no": "9",
+      "status_name": "completed",
+      "img": "ic_complete_task"
+    }
+  ]
+}

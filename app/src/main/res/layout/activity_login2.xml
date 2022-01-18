@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/img_bottom">
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".login_next.Login2Activity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="@dimen/logo_height"
+                    android:src="@drawable/logo2" />
+
+                <TextView
+                    android:id="@+id/login_header"
+                    style="@style/header_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/text_layout_height"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="@string/login_headr"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/extra_text" />
+
+                <TextView
+                    android:id="@+id/app_fw"
+                    style="@style/style_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_fw_hdr"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+            <include layout="@layout/login_next_email" />
+
+            <include layout="@layout/pass_next_lay" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_100"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/login_bottom_layer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_privacy_policy"
+        style="@style/style_thrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:autoLink="web"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/white"
+        android:textColorLink="@color/separation_yellow" />
+</RelativeLayout>

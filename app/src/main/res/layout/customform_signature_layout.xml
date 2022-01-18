@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewSkypeCon1"
+            style="@style/header_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:padding="5dp"
+            android:text="Signature"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/close_diaolg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_clear_24" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_font_color" />
+
+    <LinearLayout
+        android:id="@+id/signt"
+        style="@style/subtext_style"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_cntct_brdr"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_font_color" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sbmt_btn"
+            style="@style/style_sec"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_field_height"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/submit_btn"
+            android:text="clear"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/skip_btn"
+            style="@style/style_sec"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_field_height"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/submit_btn"
+            android:text="save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+
+            />
+    </LinearLayout>
+</LinearLayout>
+
+

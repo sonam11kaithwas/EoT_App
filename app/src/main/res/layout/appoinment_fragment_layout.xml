@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="appinment"
+            type="com.eot_app.nav_menu.appointment.list.AppointmentListViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/card_view_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/filter_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/custome_search_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="15dp">
+
+                        <EditText
+                            android:id="@+id/edtSearch"
+                            style="@style/style_sub_header"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingLeft="8dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@color/colorPrimary" />
+
+                        <ImageView
+                            android:id="@+id/search_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:paddingStart="2dp"
+                            android:src="@android:drawable/ic_search_category_default" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <com.eot_app.nav_menu.appointment.calendar.widget.CollapsibleCalendar
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:buttonLeft_drawableTintColor="@color/white"
+                    app:buttonRight_drawableTintColor="@color/white"
+                    app:expandIconColor="@color/white"
+                    app:primaryColor="@color/colorPrimary"
+                    app:selectedItem_background="@drawable/custome_search_bg"
+                    app:selectedItem_textColor="#94d4dd"
+                    app:textColor="@color/white"
+                    app:todayItem_background="@drawable/today_item_selection"
+                    app:todayItem_textColor="@color/white" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                        android:id="@+id/swiperefresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/appointment_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/recyclerview"
+                            tools:listitem="@layout/item_appointment" />
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nolist_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/recyclerview"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_no_jobs_24" />
+
+                        <TextView
+                            android:id="@+id/nolist_txt"
+                            style="@style/style_sub_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/backgroundView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#90ffffff"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearFabAudit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_fab_audit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="3dp"
+                android:textColor="@color/body_font_color" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/white"
+                app:fabSize="mini"
+                app:maxImageSize="20dp"
+                app:srcCompat="@drawable/ic_audit"
+                app:useCompatPadding="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearFabJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_fab_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="3dp"
+                android:textColor="@color/body_font_color" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/white"
+                app:fabSize="mini"
+                app:maxImageSize="20dp"
+                app:srcCompat="@drawable/ic_job"
+                app:useCompatPadding="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearFabAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_fab_add_appoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="3dp"
+                android:textColor="@color/body_font_color" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/white"
+                app:fabSize="mini"
+                app:maxImageSize="20dp"
+                app:srcCompat="@drawable/svg_appointment"
+                app:useCompatPadding="true" />
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

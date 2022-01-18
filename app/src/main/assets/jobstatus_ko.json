@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "새로운",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "수락 됨",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "받지 않다",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "취소",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "여행",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "단절",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "진행 중",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "작업 휴식",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "완료",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "닫은",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "다중 상태",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "보류 중",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

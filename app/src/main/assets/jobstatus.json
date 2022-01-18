@@ -1,0 +1,64 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "New",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "Accepted",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "Reject",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "Cancel",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "Travelling",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "Break",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "In Progress",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "Job Break",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "Completed",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "Closed",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "Multi Status",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "On Hold",
+      "img": "ic_pendng_task"
+    }
+  ]
+}

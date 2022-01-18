@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "473823639822",
+    "firebase_url": "https://eyeontask-223111.firebaseio.com",
+    "project_id": "eyeontask-223111",
+    "storage_bucket": "eyeontask-223111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473823639822:android:f86d847dc9276f33",
+        "android_client_info": {
+          "package_name": "com.eot_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473823639822-4bl0kak6965s3feuqgl9h5264hh0oj47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACM5LE5dVL_Iv_PKDxh81k_MFF6NYt7aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473823639822-4bl0kak6965s3feuqgl9h5264hh0oj47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/job_group"
+        android:visible="false">
+
+        <item
+            android:id="@+id/job_filter_search"
+            android:icon="@drawable/ic_search_white"
+            android:orderInCategory="100"
+            android:title="search"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/job_filter"
+            android:icon="@drawable/ic_filter"
+            android:orderInCategory="100"
+            android:title="filter"
+            app:showAsAction="ifRoom" />
+
+    </group>
+    <group
+        android:id="@+id/client_group"
+        android:visible="false">
+
+    </group>
+    <!--Search for Quotes lIst-->
+    <group
+        android:id="@+id/quote_group"
+        android:visible="false">
+        <item
+            android:id="@+id/quotes_filter_search"
+            android:icon="@drawable/ic_search_white"
+            android:orderInCategory="100"
+            android:title="search"
+            android:visible="true"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/quotes_filter"
+            android:icon="@drawable/ic_filter"
+            android:orderInCategory="100"
+            android:title="filter"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+    <!--search for Audit list-->
+    <group android:id="@+id/audit_group">
+
+        <item
+            android:id="@+id/audit_filter_search"
+            android:icon="@drawable/ic_search_white"
+            android:orderInCategory="100"
+            android:title="search"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+    <!--one to one chat -->
+    <group android:id="@+id/single_chat_group">
+
+        <item
+            android:id="@+id/single_chat_search"
+            android:icon="@drawable/ic_search_white"
+            android:orderInCategory="100"
+            android:title="search"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+    <!--expense-->
+    <group android:id="@+id/expense_group">
+
+        <item
+            android:id="@+id/expense_search"
+            android:icon="@drawable/ic_search_white"
+            android:orderInCategory="100"
+            android:title="search"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+    <!--Report group-->
+    <group android:id="@+id/report_group">
+
+        <item
+            android:id="@+id/appoinment_search"
+            android:icon="@drawable/ic_search_white"
+            android:orderInCategory="100"
+            android:title="search"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+    <!--addleave group-->
+    <group android:id="@+id/addleave_group">
+
+        <item
+            android:id="@+id/addleave_search"
+            android:icon="@drawable/ic_search_white"
+            android:orderInCategory="100"
+            android:title="search"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+
+    </group>
+
+</menu>

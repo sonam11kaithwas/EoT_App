@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="appointment"
+            type="com.eot_app.nav_menu.appointment.details.AppointmentDetailsViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_client_name"
+                            style="@style/style_sec"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_appointment_done"
+                            style="@style/style_thrid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bg_mark_as_done"
+                            android:drawableLeft="@drawable/svg_appointment_done_white"
+                            android:drawablePadding="5dp"
+                            android:ellipsize="end"
+                            android:maxWidth="200dp"
+                            android:maxLines="1"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:text="Mark as done"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_appointment_completed"
+                            style="@style/style_thrid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bg_mark_as_completed"
+                            android:drawableLeft="@drawable/svg_mark_as_completed"
+                            android:drawablePadding="5dp"
+                            android:maxWidth="200dp"
+                            android:maxLines="1"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:text="Completed"
+                            android:textAllCaps="false"
+                            android:textColor="@color/appointment_text_color"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/svg_mobile_appointment" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/svg_email_yellow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location_icon_green" />
+
+                        <TextView
+                            android:id="@+id/tv_complete_address"
+                            style="@style/style_thrid_thrd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_view_on_map"
+                        style="@style/style_thrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="10dp"
+                        android:text="View on Map"
+                        android:textColor="#EBB057" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/border_font_color" />
+
+                    <TextView
+                        android:id="@+id/tv_label_des"
+                        style="@style/style_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment Description"
+                        android:textStyle="bold" />
+
+
+                    <com.eot_app.eoteditor.CustomEditor
+                        android:id="@+id/editor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/border_font_color" />
+
+                    <TextView
+                        android:id="@+id/tv_lable_schedule_date_time"
+                        style="@style/style_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Scheduler start &amp; End"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect_appointment_time_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_start_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="hh:mm"
+                                android:textColor="#4AB563"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_start_date"
+                                style="@style/style_thrid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="/-/-/"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:rotation="180"
+                            android:tint="@color/color_gray"
+                            app:srcCompat="@drawable/ic_left_arrow" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect_appointment_time_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_end_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="hh:mm"
+                                android:textColor="#4AB563"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_end_date"
+                                style="@style/style_thrid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=""
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/quote_views"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/border_font_color" />
+
+                    <!--Quotation details-->
+                    <LinearLayout
+                        android:id="@+id/ll_quote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_label_quotation"
+                            style="@style/style_sec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Quotation"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_quote_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_recent_quote"
+                                style="@style/style_thrid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Recent Quotation : " />
+
+                            <TextView
+                                android:id="@+id/tv_label_quotation_id"
+                                style="@style/style_thrid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="#1234"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!--                        <View-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="1dp"-->
+                        <!--                            android:layout_marginTop="15dp"-->
+                        <!--                            android:layout_marginBottom="10dp"-->
+                        <!--                            android:background="@color/border_font_color" />-->
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/border_font_color" />
+
+
+                    <!--Job Details-->
+
+                    <LinearLayout
+                        android:id="@+id/ll_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_label_job"
+                            style="@style/style_sec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Job"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_job_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_recent_job"
+                                style="@style/style_thrid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Recent Job : " />
+
+                            <TextView
+                                android:id="@+id/tv_label_job_id"
+                                style="@style/style_thrid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="#1234"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/border_font_color" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tb_label_attachment"
+                            style="@style/style_sec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@id/tv_add_new"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_add_new"
+                            style="@style/style_sec_sec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:text="Add New"
+                            android:textColor="#EBB057" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_export_doc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_select_all"
+                            style="@style/style_sec_sec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Select All "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_export_all"
+                            style="@style/style_sec_sec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/checkbox_select_all"
+                            android:gravity="end"
+                            android:text="Export Document"
+                            android:textColor="#EBB057" />
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                        <LinearLayout
+                            android:id="@+id/nolist_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_attach_document" />
+
+                            <TextView
+                                android:id="@+id/nolist_txt"
+                                style="@style/style_sub_header"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <androidx.core.widget.ContentLoadingProgressBar
+                            android:id="@+id/progressBar"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <View
+                android:id="@+id/backgroundView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#90ffffff"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearFabJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_fab_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="3dp"
+                android:textColor="@color/body_font_color" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/white"
+                app:fabSize="mini"
+                app:maxImageSize="20dp"
+                app:srcCompat="@drawable/ic_job"
+                app:useCompatPadding="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearFabQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_fab_add_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="3dp"
+                android:textColor="@color/body_font_color" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/white"
+                app:fabSize="mini"
+                app:maxImageSize="20dp"
+                app:srcCompat="@drawable/ic_quote"
+                app:useCompatPadding="true" />
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_generate_invoice" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

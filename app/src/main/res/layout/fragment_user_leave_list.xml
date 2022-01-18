@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.eot_app.nav_menu.userleave_list_pkg.UserleaveViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/recyclerview">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_view_color"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+                            android:id="@+id/newtask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_new"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_new_task" />
+
+                            <TextView
+                                android:id="@+id/newTask"
+                                style="@style/style_forth_frth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center"
+                                android:paddingRight="3dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_close_new"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:layout_marginStart="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_close_white_24dp"
+                                android:visibility="gone" />
+
+
+                        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+                        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+                            android:id="@+id/accepted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_accepted"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:layout_marginStart="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_accepted_task" />
+
+                            <TextView
+                                android:id="@+id/tv_accepted"
+                                style="@style/style_forth_frth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center"
+                                android:paddingRight="3dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_close_accpeted"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:layout_marginStart="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_close_white_24dp"
+                                android:visibility="gone" />
+
+                        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+                        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+                            android:id="@+id/reject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_reject"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:layout_marginStart="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_rejected" />
+
+                            <TextView
+                                android:id="@+id/reject_tv"
+                                style="@style/style_forth_frth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center"
+                                android:paddingRight="3dp"
+
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:id="@+id/img_reject_closs"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:layout_marginStart="5dp"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_close_white_24dp"
+                                android:visibility="gone" />
+                        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/swiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/recyclerview"
+                        app:layoutManager="LinearLayoutManager"
+                        tools:listitem="@layout/user_leave_list_lay" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+

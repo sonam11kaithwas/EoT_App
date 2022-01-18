@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <!--start Relative parent layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--start nested scrolling view-->
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button_submit"
+            android:fillViewport="true">
+
+            <!--Strat Linear layout 1-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Strat Linear layout 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginRight="@dimen/right_margin"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/left_margin">
+
+                    <TextView
+                        android:id="@+id/tv_equipment_name"
+                        style="@style/style_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=""
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/style_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="" />
+                </LinearLayout>
+                <!--Stop Linerar layout 2-->
+
+
+                <!--Strat Linear layout 3-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/left_margin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/right_margin"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_condition"
+                        style="@style/style_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold" />
+
+                    <!--Strat Linear layout 4-->
+                    <LinearLayout
+                        android:id="@+id/audit_status_relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_cntct_brdr"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/status_label"
+                            style="@style/subtext_style"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text=""
+                            android:textColor="@color/heading_green" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+                    </LinearLayout>
+                    <!--Stop Linear layout 4-->
+
+
+                    <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                        android:id="@+id/status_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@android:color/transparent"
+                        android:popupBackground="@drawable/popupbg"
+                        android:visibility="invisible" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_remark"
+                        style="@style/style_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text=""
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_remarks"
+                        style="@style/style_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_cntct_brdr"
+                        android:gravity="top"
+                        android:hint=""
+                        android:inputType="textMultiLine"
+                        android:minLines="7"
+                        android:padding="10dp"
+                        android:text="" />
+
+                    <include layout="@layout/image_tag_layout" />
+
+                    <!--Strat Linear layout 5-->
+                    <LinearLayout
+                        android:id="@+id/upload_lable_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/attachement_view"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/upload_lable"
+                            style="@style/style_thrid_thrd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Upload"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/click_here_txt"
+                            style="@style/style_thrid_thrd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="center"
+                            android:text="Your document here"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!--Stop Linear layout 5-->
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_label_attachment"
+                        style="@style/style_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Attachment"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_attachment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="false"
+                            tools:listitem="@layout/item_attachment_with_delete_option" />
+                    </LinearLayout>
+
+                    <!--Document View End-->
+
+
+                    <!--Strat Custom Form View-->
+
+                    <LinearLayout
+                        android:id="@+id/formLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_label_customForm_que"
+                            style="@style/style_sec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="Extra Filed"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerView_customForm"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:nestedScrollingEnabled="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--End Custom Form View-->
+
+                </LinearLayout>
+                <!--Stop linear layout 3-->
+
+
+            </LinearLayout>
+            <!--Strat Linear layout 1-->
+
+
+        </androidx.core.widget.NestedScrollView>
+        <!--start nested scrolling view-->
+
+        <Button
+            android:id="@+id/button_submit"
+            style="@style/style_sec"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_field_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/submit_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--start Relative parent layout-->
+
+
+    <!--open fram layout tag-->
+    <FrameLayout
+        android:id="@+id/framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <!--close fram layout tag-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

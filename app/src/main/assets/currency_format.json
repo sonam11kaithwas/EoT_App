@@ -1,0 +1,28 @@
+{
+  "currency_format": [
+    {
+      "localId": "en",
+      "display_name": "123,456,789.12",
+      "id": "en",
+      "text": "123,456,789.12"
+    },
+    {
+      "localId": "el",
+      "display_name": "123.456.789,12",
+      "id": "el",
+      "text": "123.456.789,12"
+    },
+    {
+      "localId": "hi",
+      "display_name": "12,34,56,789.12",
+      "id": "hi",
+      "text": "12,34,56,789.12"
+    },
+    {
+      "localId": "fr",
+      "display_name": "123 456 789,12",
+      "id": "fr",
+      "text": "123 456 789,12"
+    }
+  ]
+}

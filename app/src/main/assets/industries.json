@@ -1,0 +1,24 @@
+{
+  "industries": [
+    {
+      "id": "1",
+      "name": "Accounting"
+    },
+    {
+      "id": "2",
+      "name": "Advertising"
+    },
+    {
+      "id": "3",
+      "name": "Biotechnology"
+    },
+    {
+      "id": "4",
+      "name": "Communications"
+    },
+    {
+      "id": "5",
+      "name": "Consulting"
+    }
+  ]
+}

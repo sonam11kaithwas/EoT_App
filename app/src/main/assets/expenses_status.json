@@ -1,0 +1,30 @@
+{
+  "expensestatus": [
+    {
+      "id": "1",
+      "name": "Claim Reimbursement",
+      "img": "ic_claim_reimbusement"
+    },
+    {
+      "id": "2",
+      "name": "Approved",
+      "img": "svg_expense_approved"
+    },
+    {
+      "id": "3",
+      "name": "Reject",
+      "img": "svg_expense_reject"
+    },
+    {
+      "id": "4",
+      "name": "Paid",
+      "img": "svg_expense_paid"
+    },
+    {
+      "id": "5",
+      "name": "Open",
+      "img": "svg_expense_open"
+    }
+  ]
+}
+

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_view_color"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:id="@+id/lin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_remark_head"
+                style="@style/style_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_close_white_24dp"
+                android:drawableTint="@color/black"
+                android:padding="10dp"
+                android:text="Job Remark Filter List"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/filter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_view_color"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+                            android:id="@+id/newtask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_new"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_new_task" />
+
+                            <TextView
+                                android:id="@+id/newTask"
+                                style="@style/style_forth_frth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingRight="3dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_close_new"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_close_white_24dp"
+                                android:visibility="gone" />
+
+
+                        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+                        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+                            android:id="@+id/accepted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_accepted"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_accepted_task" />
+
+                            <TextView
+                                android:id="@+id/tv_accepted"
+                                style="@style/style_forth_frth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingRight="3dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_close_accpeted"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_close_white_24dp"
+                                android:visibility="gone" />
+
+                        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+                        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+                            android:id="@+id/pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_hold"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_pendng_task" />
+
+                            <TextView
+                                android:id="@+id/tv_on_hold"
+                                style="@style/style_forth_frth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingRight="3dp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:id="@+id/img_close_hold"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_close_white_24dp"
+                                android:visibility="gone" />
+                        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+                        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+                            android:id="@+id/completed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_completed"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_complete_task" />
+
+                            <TextView
+                                android:id="@+id/tv_completed"
+                                style="@style/style_forth_frth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingRight="3dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_close_completed"
+                                android:layout_width="@dimen/filter_img_width"
+                                android:layout_height="@dimen/filter_img_height"
+                                android:padding="3dp"
+                                android:src="@drawable/ic_close_white_24dp"
+                                android:visibility="gone" />
+                        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/filter_dropdown"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/half_circle"
+                        android:gravity="center"
+                        android:visibility="invisible">
+                        <!--android:id="@+id/filter_dropdown"-->
+
+                        <ImageView
+                            android:id="@+id/drop_down_arrow"
+                            android:layout_width="30dp"
+                            android:layout_height="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:src="@drawable/up_arrow"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/filter_dropdown"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/txt_sort"
+                            style="@style/style_forth_frth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:maxLines="1" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/date_icon" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include
+                layout="@layout/add_filter_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_layout">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/joblist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lin"
+                    android:background="@color/recyclerview" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/nojobs_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lin_layout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_no_jobs_24" />
+
+            <TextView
+                android:id="@+id/tv_no_job_found"
+                style="@style/style_sub_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        app:layout_anchorGravity="bottom|left|end">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:backgroundTint="@color/white"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/sync_loader" />
+
+        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+            android:id="@+id/ll_in_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_arrow_in_progress"
+                android:layout_width="@dimen/filter_img_width"
+                android:layout_height="@dimen/filter_img_height"
+                android:padding="3dp"
+                android:src="@drawable/ic_accepted_task"
+                android:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_in_progress"
+                style="@style/style_forth_frth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:text="In progress"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+        <com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter
+            android:id="@+id/ll_today_task"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_arrow_today"
+                android:layout_width="@dimen/filter_img_width"
+                android:layout_height="@dimen/filter_img_height"
+                android:padding="3dp"
+                android:src="@drawable/ic_accepted_task"
+                android:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_today_task"
+                style="@style/style_forth_frth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </com.eot_app.nav_menu.jobs.job_list.customselecter.CustomSelecter>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

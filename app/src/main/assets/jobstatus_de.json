@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "Neu",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "Akzeptiert",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "Ablehnen",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "Stornieren",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "Reisen",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "Brechen",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "In Bearbeitung",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "Arbeitsunterbrechung",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "Abgeschlossen",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "Geschlossen",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "Mehrfachstatus",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "In Wartestellung",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/screen_background_light_transparent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/subtext_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <!--        android:background="@drawable/view"
+    -->
+
+    <TextView
+        android:id="@+id/appliedTax"
+        style="@style/style_thrid_thrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:text="Applied tax"
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/small_text"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/view" />
+
+</LinearLayout>
+

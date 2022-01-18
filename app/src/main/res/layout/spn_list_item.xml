@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#cacaca" />
+
+    <CheckBox
+        android:id="@+id/checkbox_invoice"
+        style="@style/subtext_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:buttonTint="@color/txt_color"
+        android:textColor="@color/txt_color" />
+
+</LinearLayout>
+

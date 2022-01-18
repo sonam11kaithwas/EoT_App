@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".nav_menu.jobs.job_detail.invoice.invoice_email_pkg.Invoice_Email_Activity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_send_email"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/j_prio_linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/email_temp_txt"
+                        style="@style/style_sec_sec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center|start"
+                        android:background="@drawable/email_temp_bck"
+                        android:drawableRight="@drawable/ic_down_arrow_24"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="Select Invoice Template"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/medium_txt" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                android:id="@+id/email_template_dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl"
+                android:background="@android:color/transparent"
+                android:popupBackground="@drawable/popupbg"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/layouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_email_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                    <EditText
+                        android:id="@+id/edt_email_to"
+                        style="@style/style_sec_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_font_color" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_email_cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                    <EditText
+                        android:id="@+id/edt_email_cc"
+                        style="@style/style_sec_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_font_color" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_email_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                    <EditText
+                        android:id="@+id/edt_email_subject"
+                        style="@style/style_sec_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border_font_color" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_email_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:visibility="gone"
+                    app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                    <EditText
+                        android:id="@+id/edt_email_message"
+                        style="@style/style_sec_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="top|start"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="8dp"
+                        android:text="" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.eot_app.eoteditor.EotEditor
+                    android:id="@+id/eot_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <!--            </LinearLayout>-->
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_send_email"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_field_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/submit_btn"
+        android:text="Send Email"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

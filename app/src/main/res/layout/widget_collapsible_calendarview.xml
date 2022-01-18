@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/layout_btn_group_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_prev_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="2dp"
+                android:rotation="180"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+            <ImageView
+                android:id="@+id/btn_next_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="2dp"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_btn_group_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_prev_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="2dp"
+                android:rotation="180"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+            <ImageView
+                android:id="@+id/btn_next_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="2dp"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/style_sec_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:text="Jun 2015"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <com.eot_app.nav_menu.appointment.calendar.view.LockScrollView
+        android:id="@+id/scroll_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <TableLayout
+            android:id="@+id/table_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+    </com.eot_app.nav_menu.appointment.calendar.view.LockScrollView>
+
+    <com.eot_app.nav_menu.appointment.calendar.view.LockScrollView
+        android:id="@+id/scroll_view_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <TableLayout
+            android:id="@+id/table_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+
+    </com.eot_app.nav_menu.appointment.calendar.view.LockScrollView>
+
+    <com.eot_app.nav_menu.appointment.calendar.view.ExpandIconView
+        android:id="@+id/expandIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:eiv_animationDuration="300"
+        app:eiv_color="#000"
+        app:eiv_colorIntermediate="@android:color/black"
+        app:eiv_colorLess="@android:color/black"
+        app:eiv_colorMore="@android:color/black"
+        app:eiv_roundedCorners="true"
+        app:eiv_switchColor="true" />
+
+
+</LinearLayout>

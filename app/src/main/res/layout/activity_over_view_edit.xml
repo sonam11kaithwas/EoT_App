@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_menu.client.clientlist.client_detail.edit_overview.OverViewEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/update_bt"
+        android:layout_alignParentTop="true"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_client_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/subtext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Client Name *"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/hint_tv_ac"
+                    style="@style/text_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Account Type"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/Layout_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_below="@+id/hint_tv_ac"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_spinner_account"
+                        style="@style/subtext_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Account Type" />
+
+                    <ImageView
+                        android:id="@+id/img"
+                        style="@style/subtext_style"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_drop_down_black" />
+
+                </LinearLayout>
+
+                <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                    android:id="@+id/account_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Layout_account"
+                    android:background="@android:color/transparent"
+                    android:dropDownWidth="match_parent"
+                    android:minHeight="20dp"
+                    android:popupBackground="@drawable/popupbg"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_gst_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <EditText
+                    android:id="@+id/gst_no"
+                    style="@style/subtext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="GST No"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10"
+                    android:paddingTop="8dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tin_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <EditText
+                    android:id="@+id/tin_no"
+                    style="@style/subtext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="TIN No"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10"
+                    android:paddingTop="8dp"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <TextView
+                android:id="@+id/status_lable"
+                style="@style/subtext_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/arimo_regular"
+                android:text="Status"
+                android:textColor="@color/txt_sub_color"
+                android:textColorHint="@color/txt_sub_color" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/active"
+                        style="@style/subtext_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Active" />
+
+                    <RadioButton
+                        android:id="@+id/inactive"
+                        style="@style/subtext_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Inactive" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_hint_indus"
+                    style="@style/text_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Industry"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/indus_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_below="@+id/tv_hint_indus"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_spinner_ind"
+                        style="@style/subtext_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Industry" />
+
+                    <ImageView
+                        style="@style/subtext_style"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_drop_down_black" />
+
+                </LinearLayout>
+
+                <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                    android:id="@+id/industry_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/indus_linearLayout"
+                    android:background="@android:color/transparent"
+                    android:dropDownWidth="match_parent"
+                    android:minHeight="20dp"
+                    android:popupBackground="@drawable/popupbg"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/hint_tv_reference"
+                    style="@style/text_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Account Type"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_reference"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_below="@+id/hint_tv_reference"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_spinner_reference"
+                        style="@style/subtext_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Account Type" />
+
+                    <ImageView
+                        android:id="@+id/imgreference"
+                        style="@style/subtext_style"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_drop_down_black" />
+
+                </LinearLayout>
+
+                <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                    android:id="@+id/referenceDp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout_reference"
+                    android:background="@android:color/transparent"
+                    android:dropDownWidth="match_parent"
+                    android:minHeight="20dp"
+                    android:popupBackground="@drawable/popupbg"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_client_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+                <!--android:paddingTop="8dp"-->
+                <EditText
+                    android:id="@+id/notes"
+                    style="@style/subtext_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:background="@android:color/transparent"
+                    android:hint="Notes"
+                    android:textColor="@color/body_font_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/update_bt"
+        style="@style/subtext_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_field_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/submit_btn"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold" />
+
+</RelativeLayout>

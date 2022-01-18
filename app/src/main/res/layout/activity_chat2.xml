@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recyclerview"
+    tools:context=".nav_menu.admin_fw_chat_pkg.chat_pkg.ChatActivity">
+    <!--   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_client_chats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/client_chat_layout"
+            app:layout_constraintTop_toTopOf="@+id/expanded_image_bg" />
+        <!--       android:background="@color/recyclerview"-->
+        <LinearLayout
+            android:id="@+id/client_chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/recyclerview"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/send_msg_bckgrd"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/msg_send_edt"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:elevation="5dp"
+                    android:maxHeight="@dimen/send_msg_layout"
+                    android:padding="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textStyle="normal">
+
+                </EditText>
+
+
+                <ImageView
+                    android:id="@+id/file_upload_Img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_attach_document" />
+
+                <ImageView
+                    android:id="@+id/imag_upload_Img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_gallery" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/send_msg_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:elevation="10dp"
+                android:src="@drawable/chat_send_ic" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+    </LinearLayout>
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
+
+
+

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userNmImg"
+            style="@style/style_thrid"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="S"
+            android:textAllCaps="true"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/batchIcon"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/usrNm"
+        style="@style/style_thrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/rls"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="User"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/usrNm"
+        android:layout_marginTop="1dp"
+        android:background="@color/txt_color" />
+
+</RelativeLayout>

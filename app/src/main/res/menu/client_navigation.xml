@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/client_overview"
+        android:icon="@drawable/ic_overview"
+        android:title="@string/tlt_clt_ov" />
+
+    <item
+        android:id="@+id/client_contact"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/tlt_clt_contact" />
+
+    <item
+        android:id="@+id/client_site"
+        android:icon="@drawable/ic_site"
+        android:title="@string/tlt_clt_site" />
+
+    <item
+        android:id="@+id/work_history"
+        android:icon="@drawable/ic_client_history_icon"
+        android:title="Work History" />
+</menu>

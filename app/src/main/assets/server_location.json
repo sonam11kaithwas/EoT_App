@@ -1,0 +1,20 @@
+{
+  "Server_location": [
+    {
+      "apiCode": "1",
+      "text": "America"
+    },
+    {
+      "apiCode": "2",
+      "text": "Europe"
+    },
+    {
+      "apiCode": "3",
+      "text": "Australia"
+    },
+    {
+      "apiCode": "4",
+      "text": "Asia"
+    }
+  ]
+}

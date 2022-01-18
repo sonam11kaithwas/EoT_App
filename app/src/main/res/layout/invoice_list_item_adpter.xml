@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_invoice_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="0dp">
+
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkbox_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="start|center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/item_nm_invoice"
+                style="@style/style_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="3dp"
+                android:gravity="left"
+                android:text="Item"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/des"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_nm_invoice"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/qty_invoice"
+                style="@style/style_thrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/des"
+                android:layout_marginTop="1dp"
+                android:text="0"
+                android:textStyle="normal"
+                android:visibility="visible" />
+            <!--                style="@style/style_thrid_thrd"
+            -->
+            <TextView
+                android:id="@+id/description"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qty_invoice"
+                android:layout_marginTop="1dp"
+                android:gravity="left"
+                android:text="description"
+                android:textSize="@dimen/medium_txt_low"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <!--
+            -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_lay_billable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/item_price_invoice"
+                style="@style/style_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-2dp"
+                android:gravity="end"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/non_billable"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/non_billable_lay2_bck"
+                android:padding="2dp"
+                android:text="Non Billable"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

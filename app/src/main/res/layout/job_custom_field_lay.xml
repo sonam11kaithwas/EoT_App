@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/customField_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <!--v        android:layout_marginBottom="8dp"
+        -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/custom_filed_txt"
+                style="@style/job_details_headr_style"
+                android:layout_alignParentLeft="true"
+                android:text="Instruction" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_custom_views"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_filed_txt"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:maxLines="2"
+                android:orientation="vertical"
+                android:text=""
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/customfiled_btn"
+                style="@style/subtext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/medium_txt"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

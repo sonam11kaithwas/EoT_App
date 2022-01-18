@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "חָדָשׁ",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "מְקוּבָּל",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "לִדחוֹת",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "לְבַטֵל",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "נוסעים",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "לשבור",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "בתהליך",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "הפסקת עבודה",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "הושלם",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "סָגוּר",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "ריבוי סטטוסים",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "בהמתנה",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

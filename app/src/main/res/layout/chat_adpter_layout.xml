@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+
+    <TextView
+        android:id="@+id/chat_date"
+        style="@style/style_sec_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/date_back_brdr"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Date"
+        android:textColor="@color/body_font_color"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rcv_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_date"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/lay_pad"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rcv_layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/rev_usrNm"
+            style="@style/style_thrid_thrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="@string/Username"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/chat_usrNM"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recv_msgs"
+            style="@style/style_thrid_thrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginBottom="2dp"
+            android:autoLink="all"
+            android:minWidth="@dimen/send_msg_layout"
+            android:text="Reciever"
+            android:textColor="@color/body_font_color"
+            android:textSize="@dimen/chat_msgs"
+            android:textStyle="normal" />
+
+
+        <ImageView
+            android:id="@+id/rcv_img"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gallery" />
+
+
+        <LinearLayout
+            android:id="@+id/rcv_all_file_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_chat_file" />
+            <!--android:src="@drawable/ic_chat_file"-->
+            <TextView
+                android:id="@+id/all_types_file_rcv"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginStart="5dp"
+                android:minWidth="@dimen/send_msg_layout"
+                android:text="All types File open"
+                android:textColor="@color/body_font_color"
+                android:textSize="@dimen/chat_msgs"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text=""
+            android:textColor="@color/body_font_color"
+            android:textSize="@dimen/chat_time"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sndr_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="@dimen/lay_pad"
+        android:background="@drawable/send_layout"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/send_usrNm"
+            style="@style/style_thrid_thrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="@string/Username"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/chat_usrNM"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sendr_msgs"
+            style="@style/style_thrid_thrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginBottom="2dp"
+            android:minWidth="@dimen/send_msg_layout"
+            android:text="sender"
+            android:textColor="@color/body_font_color"
+            android:textSize="@dimen/chat_msgs"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/send_img"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_gallery" />
+
+
+        <LinearLayout
+            android:id="@+id/send_all_file_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chat_file" />
+
+            <TextView
+                android:id="@+id/all_types_file_send"
+                style="@style/style_thrid_thrd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginStart="5dp"
+                android:minWidth="@dimen/send_msg_layout"
+                android:text="All types File open"
+                android:textColor="@color/body_font_color"
+                android:textSize="@dimen/chat_msgs"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text=""
+            android:textColor="@color/body_font_color"
+            android:textSize="@dimen/chat_time"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

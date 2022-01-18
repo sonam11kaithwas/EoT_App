@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/spinner_textview"
+        style="@style/subtext_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/txtview_brdr"
+        android:gravity="center|left"
+        android:padding="10dp"
+        android:textColor="@color/txt_color" />
+
+</LinearLayout>

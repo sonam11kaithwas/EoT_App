@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "नया",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "स्वीकृत",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "अस्वीकार",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "रद्द",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "यात्रा",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "ब्रेक",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "प्रगति में",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "जॉब ब्रेक",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "पूर्ण",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "बन्द",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "बहु स्थिति",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "होल्ड पर",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

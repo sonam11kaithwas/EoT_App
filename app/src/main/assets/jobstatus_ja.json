@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "新着",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "承認済み",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "拒否する",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "キャンセル",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "旅行",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "ブレーク",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "進行中",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "休憩",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "完了",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "閉まっている",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "マルチステータス",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "保留",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

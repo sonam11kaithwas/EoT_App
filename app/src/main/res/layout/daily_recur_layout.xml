@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentViewDailyRecr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submit_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/recuring_pattenr"
+                style="@style/header_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/recyclerview"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Recurring Pattern" />
+
+
+            <!--            <RadioGroup-->
+            <!--                android:id="@+id/rediogrp"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+
+            <!--Every Recr Tab start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_everyDay"
+                    style="@style/style_thrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Every" />
+
+                <LinearLayout
+                    android:id="@+id/daily_recr_every_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_shap_qus"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <EditText
+                        android:id="@+id/every_recr_edt"
+                        style="@style/add_recr_radio_style"
+                        android:background="@android:color/transparent"
+                        android:text="1" />
+
+                    <LinearLayout
+                        android:id="@+id/every_img_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/recyclerview"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/every_recr_up_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+                        <ImageView
+                            android:id="@+id/every_recr_down_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/day_s"
+                    style="@style/style_thrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:baselineAligned="false"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="day(s)" />
+            </LinearLayout>
+
+
+            <!--Every Recr Tab Stop-->
+
+            <RadioButton
+                android:id="@+id/radio_weekDay"
+                style="@style/style_thrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Weekday" />
+            <!--
+            -->
+
+            <!--            </RadioGroup>-->
+
+            <include layout="@layout/common_recr_layout" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_field_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submit_btn"
+        android:gravity="center"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </Button>
+</RelativeLayout>

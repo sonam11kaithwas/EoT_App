@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/custom_search_bg"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome_search_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="15dp">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            style="@style/style_sub_header"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imvCross"
+            android:layout_width="18dp"
+            android:layout_height="28dp"
+            android:src="@drawable/delete"
+            android:visibility="gone" />
+        <!--<ImageView-->
+        <!--android:id="@+id/imvSearchclick"-->
+        <!--android:layout_width="18dp"-->
+        <!--android:layout_height="18dp"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--app:srcCompat="?android:attr/actionModeWebSearchDrawable" />-->
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

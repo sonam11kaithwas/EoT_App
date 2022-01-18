@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.eot_app.nav_menu.addleave.AddLeaveViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/recyclerview">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/linear_fromdate_lay"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_sheet_bck"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/from_lable"
+                                    style="@style/text_hint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:visibility="gone" />
+
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/from_img"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/from_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center|start"
+                                    android:src="@drawable/date_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/time_from"
+                                    style="@style/style_thrid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/from_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_toEndOf="@+id/from_img"
+                                    android:gravity="center|start"
+                                    android:text="" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_timesheet_to"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/time_sheet_bck"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/to_lable"
+                                    style="@style/text_hint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:visibility="gone" />
+
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/to_img"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/to_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center|start"
+                                    android:src="@drawable/date_icon" />
+
+                                <TextView
+                                    android:id="@+id/time_to"
+                                    style="@style/style_thrid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_below="@+id/to_lable"
+                                    android:layout_gravity="center|start"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_toEndOf="@+id/to_img"
+                                    android:gravity="center|start"
+                                    android:text="" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/date"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/border_font_color" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_notes_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_below="@+id/note_view"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="false"
+                    app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                    <EditText
+                        android:id="@+id/notes_edt"
+                        style="@style/style_sec_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Add Notes"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/note_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/add_reason_layout"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/border_font_color" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_reason_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_below="@+id/view"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="false"
+                    app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                    <EditText
+                        android:id="@+id/reason_edt"
+                        style="@style/style_sec_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Reason"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/submit_button"
+                    style="@style/style_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/add_notes_layout"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/submit_btn"
+                    android:gravity="center_horizontal|center"
+                    android:orientation="horizontal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

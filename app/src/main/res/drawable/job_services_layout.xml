@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#e0ecec" />
+    <!--<solid android:color="@color/recyclerview" />-->
+    <padding
+        android:bottom="3dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="3dp" />
+
+    <corners android:radius="18dp" />
+</shape>
+
+    <!--<?xml version="1.0" encoding="UTF-8"?>-->
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--    <item android:state_pressed="true">-->
+    <!--        <shape android:shape="rectangle">-->
+    <!--            <corners android:radius="5dp" />-->
+    <!--            <solid android:color="#e0ecec" />-->
+    <!--            <stroke android:width="1dp" android:color="#cacaca" />-->
+
+    <!--        </shape>-->
+    <!--    </item>-->
+
+    <!--    <item>-->
+    <!--        <shape android:shape="rectangle">-->
+    <!--            <corners android:radius="5dp" />-->
+    <!--            <solid android:color="#e0ecec" />-->
+    <!--        </shape>-->
+    <!--        <padding-->
+    <!--            android:bottom="3dp"-->
+    <!--            android:left="5dp"-->
+    <!--            android:right="5dp"-->
+    <!--            android:top="3dp" />-->
+
+    <!--        <corners android:radius="20dp" />-->
+    <!--    </item>-->
+
+
+    <!--</selector>-->

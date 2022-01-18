@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/left_margin"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="@dimen/right_margin"
+    android:orientation="vertical"
+    tools:context=".nav_menu.expense.add_expense.AddExpenseActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_btn"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/dash_line"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/remove_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_delete_black_24dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/upload_Img"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/app_logo2"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/upload_btn"
+                    style="@style/style_sec"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/button_field_height"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/submit_btn"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/click_here_txt"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Click here for upload reciepts"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/expense_nm_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:hint="Expense name"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText"><!--android:paddingTop="8dp"-->
+                <EditText
+                    android:id="@+id/edt_expense_nm"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Expense name"
+                    android:inputType="textPersonName"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                style="@style/style_sec_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Date"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="@dimen/medium_text_low"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/edt_expense_date"
+                style="@style/style_sec_sec"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/transparent"
+                android:hint="Date"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_hint_category"
+                    style="@style/text_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/arimo_regular"
+                    android:text="Industry"
+                    android:textColor="@color/body_font_color"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/category_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_below="@+id/tv_hint_category"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_spinner_category"
+                        style="@style/style_sec_sec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Industry" />
+
+                    <ImageView
+                        style="@style/subtext_style"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+                </LinearLayout>
+
+                <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                    android:id="@+id/spinn_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/category_linearLayout"
+                    android:background="@android:color/transparent"
+                    android:dropDownWidth="match_parent"
+                    android:minHeight="20dp"
+                    android:popupBackground="@drawable/popupbg"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/expense_amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:hint="Amount"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText"><!--android:paddingTop="8dp"-->
+                <EditText
+                    android:id="@+id/edt_expense_amount"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Amount"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+                <!--                     android:inputType="numberDecimal"-->
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/expense_desc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:hint="Description"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText"><!--android:paddingTop="8dp"-->
+                <EditText
+                    android:id="@+id/edt_expense_desc"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Description"
+                    android:inputType="textPersonName"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/expense_group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:hint="Group"
+                android:paddingTop="5dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText"><!--android:paddingTop="8dp"-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_group"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownHeight="140dp"
+                    android:minHeight="20dp"
+                    android:popupBackground="@drawable/popupbg"
+                    android:visibility="visible" />
+                <!--   style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:popupBackground="@drawable/popupbg"
+                    android:singleLine="true"-->
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <TextView
+                android:id="@+id/link_to"
+                style="@style/style_sec_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_gravity="center|start"
+                android:background="@android:color/transparent"
+                android:gravity="center|start"
+                android:paddingEnd="@dimen/input_field_padding"
+                android:singleLine="true"
+                android:text="Link to" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rediogrp"
+                style="@style/style_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-2dp"
+                android:divider="?android:attr/dividerHorizontal"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_none"
+                    style="@style/style_thrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="None" />
+
+                <RadioButton
+                    android:id="@+id/radio_job"
+                    style="@style/style_thrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job" />
+
+                <RadioButton
+                    android:id="@+id/radio_client"
+                    style="@style/style_thrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Client" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/job_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/job_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:hint="Group"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_job"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownWidth="match_parent"
+                    android:minHeight="20dp"
+                    android:popupBackground="@drawable/popupbg"
+                    android:visibility="visible" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/client_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color"
+                android:visibility="gone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/clients_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:gravity="center"
+                android:hint="Group"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="false"
+                app:hintTextAppearance="@style/TextInputLayoutHintText"><!--android:paddingTop="8dp"-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_client"
+                    style="@style/style_sec_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownWidth="match_parent"
+                    android:minHeight="20dp"
+                    android:popupBackground="@drawable/popupbg"
+                    android:visibility="visible" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/border_font_color" />
+
+            <CheckBox
+                android:id="@+id/checkbox_rem_claim"
+                style="@style/style_sec_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:checked="true"
+                android:gravity="center|start"
+                android:text="Claim" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/style_sec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_field_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/submit_btn"
+        android:text="Add expense"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </Button>
+</RelativeLayout>

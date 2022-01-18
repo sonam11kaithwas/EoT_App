@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/card_view_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include layout="@layout/search_layout" />
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_view_color"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.eot_app.utility.CustomFilterButton
+                        android:id="@+id/cfb_claim"
+                        style="@style/style_thrid_thrd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cfb_icon="@drawable/ic_claim_reimbusement"
+                        app:cfb_text="Claim Reimbursement" />
+
+                    <com.eot_app.utility.CustomFilterButton
+                        android:id="@+id/cfb_approved"
+                        style="@style/style_thrid_thrd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cfb_icon="@drawable/svg_expense_approved"
+                        app:cfb_text="Approved" />
+
+                    <com.eot_app.utility.CustomFilterButton
+                        android:id="@+id/cfb_reject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cfb_icon="@drawable/svg_expense_reject"
+                        app:cfb_text="Reject" />
+
+                    <com.eot_app.utility.CustomFilterButton
+                        android:id="@+id/cfb_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cfb_icon="@drawable/svg_expense_paid"
+                        app:cfb_text="Paid" />
+
+                    <com.eot_app.utility.CustomFilterButton
+                        android:id="@+id/cfb_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cfb_icon="@drawable/svg_expense_open"
+                        app:cfb_text="Open" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/filter_dropdown"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/half_circle"
+                    android:gravity="center"
+                    android:visibility="invisible">
+                    <!--android:id="@+id/filter_dropdown"-->
+
+                    <ImageView
+                        android:id="@+id/drop_down_arrow"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/up_arrow"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/filter_dropdown"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="4dp"
+                    android:paddingBottom="3dp">
+
+                    <TextView
+                        android:id="@+id/txt_sort"
+                        style="@style/style_forth_frth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/date_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/add_filter_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:name="com.eot_app.nav_menu.expense.ExpenseListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/recyclerview"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/fragment_expense_list" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_empty_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_no_jobs_24" />
+
+            <TextView
+                android:id="@+id/tv_no_expenses"
+                style="@style/style_sub_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

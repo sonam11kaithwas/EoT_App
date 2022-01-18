@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_weekly_recur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.eot_app.nav_menu.jobs.add_job.add_job_recr.daily_recr_pkg.CustomWeekSelector
+                android:id="@+id/mon_week_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="M"
+                android:textStyle="bold" />
+
+            <com.eot_app.nav_menu.jobs.add_job.add_job_recr.daily_recr_pkg.CustomWeekSelector
+                android:id="@+id/tu_week_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="T" />
+
+
+            <com.eot_app.nav_menu.jobs.add_job.add_job_recr.daily_recr_pkg.CustomWeekSelector
+                android:id="@+id/wed_week_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="W" />
+
+            <com.eot_app.nav_menu.jobs.add_job.add_job_recr.daily_recr_pkg.CustomWeekSelector
+                android:id="@+id/thu_week_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="T" />
+
+            <com.eot_app.nav_menu.jobs.add_job.add_job_recr.daily_recr_pkg.CustomWeekSelector
+                android:id="@+id/fri_week_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="F" />
+
+            <com.eot_app.nav_menu.jobs.add_job.add_job_recr.daily_recr_pkg.CustomWeekSelector
+                android:id="@+id/sat_week_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="S" />
+
+            <com.eot_app.nav_menu.jobs.add_job.add_job_recr.daily_recr_pkg.CustomWeekSelector
+                android:id="@+id/sun_week_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="S" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_never_end"
+                style="@style/style_thrid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Never end" />
+
+            <RadioButton
+                android:id="@+id/radio_on"
+                style="@style/style_thrid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:baselineAligned="false"
+                android:text="On" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/end_date_for_weekly_recur"
+            style="@style/style_sec_sec"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edittext_shap_qus"
+            android:clickable="false"
+            android:drawableRight="@drawable/date_icon"
+            android:drawablePadding="@dimen/tv_drawable_padding"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="@dimen/medium_text_low" />
+
+    </RelativeLayout>
+
+</LinearLayout>

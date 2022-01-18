@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_remark_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@drawable/dash_line_equipment_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/remark_txt"
+            style="@style/style_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Remark"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/remark_condition_txt"
+            style="@style/style_thrid_thrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remark_txt"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/remark_txt"
+            app:layout_constraintTop_toBottomOf="@+id/remark_txt" />
+
+        <TextView
+            android:id="@+id/remark_status"
+            style="@style/subtext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/remark_txt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="goodt"
+            android:textAllCaps="false"
+            android:textSize="@dimen/medium_txt"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/remark_condition_txt"
+            app:layout_constraintTop_toBottomOf="@+id/remark_txt" />
+
+
+        <TextView
+            android:id="@+id/remark_notes"
+            style="@style/style_thrid_thrd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remark_condition_txt"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/btnComplationView"
+            app:layout_constraintStart_toStartOf="@+id/remark_condition_txt"
+            app:layout_constraintTop_toBottomOf="@+id/remark_condition_txt" />
+
+        <TextView
+            android:id="@+id/btnComplationView"
+            style="@style/subtext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_txt"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remark_notes"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnComplationView"
+            app:layout_constraintStart_toStartOf="@+id/remark_notes"
+            app:layout_constraintTop_toBottomOf="@+id/remark_notes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

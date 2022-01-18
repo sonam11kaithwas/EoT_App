@@ -1,0 +1,74 @@
+{
+  "language": [
+    {
+      "lngId": "1",
+      "nativeName": "English",
+      "languageCode": "en"
+    },
+    {
+      "lngId": "2",
+      "nativeName": "Hindi",
+      "languageCode": "hi"
+    },
+    {
+      "lngId": "3",
+      "nativeName": "Greek",
+      "languageCode": "el"
+    },
+    {
+      "lngId": "4",
+      "nativeName": "Dutch",
+      "languageCode": "nl"
+    },
+    {
+      "lngId": " 5 ",
+      "nativeName": "Spanish",
+      "languageCode": "es"
+    },
+    {
+      "lngId": "6",
+      "nativeName": "Hebrew",
+      "languageCode": "iw"
+    },
+    {
+      "lngId": "7",
+      "nativeName": "German",
+      "languageCode": "de"
+    },
+    {
+      "lngId": "8",
+      "nativeName": "French",
+      "languageCode": "fr"
+    },
+    {
+      "lngId": "9",
+      "nativeName": "Italian",
+      "languageCode": "it"
+    },
+    {
+      "lngId": "10",
+      "nativeName": "Japanese",
+      "languageCode": "ja"
+    },
+    {
+      "lngId": "11",
+      "nativeName": "Korean",
+      "languageCode": "ko"
+    },
+    {
+      "lngId": "12",
+      "nativeName": "Portuguese",
+      "languageCode": "pt"
+    },
+    {
+      "lngId": "13",
+      "nativeName": "Russian",
+      "languageCode": "ru"
+    },
+    {
+      "lngId": "14",
+      "nativeName": "Turkish",
+      "languageCode": "tr"
+    }
+  ]
+}

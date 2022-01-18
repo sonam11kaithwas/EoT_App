@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "Nuova",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "Accettata",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "Rifiutare",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "Annulla",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "In viaggio",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "Rompere",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "In corso",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "Pausa lavoro",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "Completato",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "Chiusa",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "Multi Status",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "На удерживании",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="-2dp"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/shift_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:id="@+id/layout_shit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/shift_time_txt"
+                    style="@style/subtext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="All Day"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <Switch
+                    android:id="@+id/switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:theme="@style/Theme.MyTheme" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+            android:id="@+id/time_shift_dp"
+            android:layout_width="180dp"
+            android:layout_height="5dp"
+            android:layout_below="@+id/shift_layout"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:popupBackground="@drawable/popupbg"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

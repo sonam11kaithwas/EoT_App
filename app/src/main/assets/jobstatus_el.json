@@ -1,0 +1,65 @@
+{
+  "jobstatus": [
+    {
+      "id": "1",
+      "name": "Νέος",
+      "img": "ic_new_task"
+    },
+    {
+      "id": "2",
+      "name": "Αποδεκτό",
+      "img": "ic_accepted_task"
+    },
+    {
+      "id": "3",
+      "name": "Απορρίπτω",
+      "img": "ic_rejected"
+    },
+    {
+      "id": "4",
+      "name": "Ματαίωση",
+      "img": "ic_cancel"
+    },
+    {
+      "id": "5",
+      "name": "Ταξίδια",
+      "img": "ic_travelling_small_icon"
+    },
+    {
+      "id": "6",
+      "name": "Διακοπή",
+      "img": "ic_break"
+    },
+    {
+      "id": "7",
+      "name": "Σε εξέλιξη",
+      "img": "in_progress"
+    },
+    {
+      "id": "8",
+      "name": "Διάλειμμα εργασίας",
+      "img": "breake_job_his"
+    },
+    {
+      "id": "9",
+      "name": "Ολοκληρώθηκε το",
+      "img": "ic_complete_task"
+    },
+    {
+      "id": "10",
+      "name": "Κλειστό",
+      "img": "ic_closed_small_icon"
+    },
+    {
+      "id": "11",
+      "name": "Πολλαπλή κατάσταση",
+      "img": "ic_multi_status"
+    },
+    {
+      "id": "12",
+      "name": "Σε κράτηση",
+      "img": "ic_pendng_task"
+    }
+  ]
+}
+

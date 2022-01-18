@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/recyclerview"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_contract_msg"
+            style="@style/style_thrid_thrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_equipment_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <com.eot_app.utility.util_interfaces.NoDefaultSpinner
+                    android:id="@+id/spinner_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="invisible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_filter_name"
+                    style="@style/header_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/foundequ_layout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@color/recyclerview"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:visibility="gone">-->
+
+        <!--            <androidx.appcompat.widget.AppCompatTextView-->
+        <!--                android:id="@+id/found_equip"-->
+        <!--                style="@style/job_details_headr_style"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:gravity="top"-->
+        <!--                android:paddingLeft="10dp"-->
+        <!--                android:paddingTop="5dp"-->
+        <!--                android:paddingRight="10dp"-->
+        <!--                android:paddingBottom="5dp"-->
+        <!--                android:text="We have found scan equipment"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:visibility="gone" />-->
+
+        <!--            <androidx.recyclerview.widget.RecyclerView-->
+        <!--                android:id="@+id/found_equipment_list"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@color/recyclerview" />-->
+        <!--        </LinearLayout>-->
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/audit_equipment_list"
+                android:layout_width="396dp"
+                android:layout_height="704dp"
+                android:background="@color/recyclerview" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/content_loading_progress"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <include layout="@layout/empty_list" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    tools:context=".nav_menu.quote.quote_invoice_pkg.Quote_Invoice_Details_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/addInvoiceItem_btn"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/invoice_re_layout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimary"
+                android:gravity="left|right"
+                android:padding="20dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/quote_nm"
+                    style="@style/style_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quote_total_amount"
+                    style="@style/style_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <!--android:text="Rs 500000"-->
+
+                <TextView
+                    android:id="@+id/invoice_adrs"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quote_nm"
+                    android:gravity="left"
+                    android:textColor="#4EBAC2"
+                    android:textStyle="bold" />
+                <!--android:text="Aplite Info Solution"-->
+
+                <TextView
+                    android:id="@+id/in_country"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/invoice_adrs"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+                <!--android:text="312 3rd floor aplite info solution"-->
+
+                <TextView
+                    android:id="@+id/inv_email"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/in_country"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:textStyle="normal" />
+                <!--android:text="312 3rd floor aplite info solution"-->
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative_chip"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/invoice_re_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="60dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/invoice_chip"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <!--android:layout_above="@id/invoice_recyclerView"-->
+
+                <TextView
+                    android:id="@+id/quote_cre_dt"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toStartOf="@+id/divider_view"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_create_date"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quote_cre_dt"
+                    android:layout_alignStart="@+id/quote_cre_dt"
+                    android:layout_alignEnd="@+id/quote_cre_dt"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/medium_txt_low"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:id="@+id/divider_view"
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:background="@color/txt_color" />
+
+                <TextView
+                    android:id="@+id/quote_due_dt"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/divider_view"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_due_date"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quote_due_dt"
+                    android:layout_alignStart="@+id/quote_due_dt"
+                    android:layout_alignEnd="@+id/quote_due_dt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/medium_txt_low"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/listItem_invoice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_chip"
+                android:gravity="center|start">
+
+                <TextView
+                    android:id="@+id/list_item_quote_count"
+                    style="@style/style_thrid_thrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/rm_quote_im"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_delete_invoce_item" />
+            </RelativeLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/listItem_invoice_layout">
+
+                <!-- <android.support.v7.widget.RecyclerView
+                     android:id="@+id/recyclerView_quote"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                 </android.support.v7.widget.RecyclerView>-->
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_shippingitem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/recyclerView_quote" />
+                    </RelativeLayout>
+                </ScrollView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <View
+                android:id="@+id/backgroundView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#90ffffff"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearFabQuotesInJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_fab_QuotesToJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:textColor="@color/body_font_color" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_add_new_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearFabEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_fab_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="end"
+            android:padding="3dp"
+            android:textColor="@color/body_font_color" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_email" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearFabPrintInvoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_fab_print_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:textColor="@color/body_font_color" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_print_invoice" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearFabAddNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_fab_add_new_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:textColor="@color/body_font_color" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_add_new_item" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/invoiceFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_generate_invoice" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

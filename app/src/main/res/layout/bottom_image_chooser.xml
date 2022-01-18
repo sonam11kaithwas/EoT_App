@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/camera_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/start_margin"
+                android:layout_height="@dimen/start_margin"
+                android:src="@drawable/ic_photo_camera_black_24dp" />
+
+            <TextView
+                android:id="@+id/camera"
+                style="@style/style_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/body_font_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gallary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/start_margin"
+                android:layout_height="@dimen/start_margin"
+                android:src="@drawable/ic_gallery" />
+
+            <TextView
+                android:id="@+id/gallery"
+                style="@style/style_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/body_font_color" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/driveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/start_margin"
+                android:layout_height="@dimen/start_margin"
+                android:src="@drawable/ic_attach_document" />
+
+            <TextView
+                android:id="@+id/drive_document"
+                style="@style/style_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/body_font_color" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

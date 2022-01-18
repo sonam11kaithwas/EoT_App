@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/email_temp_bck.xml" value="0.19692307692307692" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_2401.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/popupbg.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/tax_bck_lay.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/txtview_brdr.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_add_audit.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_add_job.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_add_quotes.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_edit__invoice.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_equipment_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_generate_invoice.xml" value="0.11296296296296296" />
+        <entry key="app/src/main/res/layout/activity_invoice.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_invoice_email.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_over_view_edit.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/activity_user_to_user_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/chat_adpter_layout.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/chatmember_adpterlayout.xml" value="0.11764705882352941" />
+        <entry key="app/src/main/res/layout/custom_item_adpter.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/custom_search_view.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/filter_layout.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/fragment_client_overview2.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/fragment_detail2.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/fragment_dialog_location_permission.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/fragment_job_list.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/fragment_singlechat.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/fragment_time_sheet.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/gru_usr_list_lay.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/invoice_list_item_adpter.xml" value="0.11296296296296296" />
+        <entry key="app/src/main/res/layout/item_custom_field_job_overview.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/item_job_custom_field.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/job_custom_field_lay.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/lat_lng_lay.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/main_menu_items.xml" value="0.11296296296296296" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/remark_quest_adpter_lay.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/row_historyfragment.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/search_layout.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/spinner_item_layout.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/subscription_layout.xml" value="0.11296296296296296" />
+        <entry key="app/src/main/res/layout/test_crcl_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/usr_online_offline_grp.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout/widget_collapsible_calendarview.xml" value="0.18385416666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+          <item index="10" class="java.lang.String" itemvalue="android.annotation.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
+          <item index="14" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="15">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="9" class="java.lang.String" itemvalue="android.annotation.NonNull" />
+          <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
+          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+          <item index="14" class="java.lang.String" itemvalue="lombok.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
